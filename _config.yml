@@ -108,7 +108,7 @@ author:
   youtube          :
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - github-pages
 
