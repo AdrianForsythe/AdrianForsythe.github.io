@@ -108,7 +108,7 @@ author:
   youtube          :
 
 # Build settings
-remote_theme: mmistakes/minimal-mistakes
+theme: mmistakes/minimal-mistakes
 plugins:
   - github-pages
 
