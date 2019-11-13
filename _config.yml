@@ -20,6 +20,7 @@
 
 locale: "en"
 title: "Adrian Forsythe"
+logo: "headshot.png"
 title_separator          : "-"
 name                     : "Adrian Forsythe"
 email: adrian.e.forsythe@gmail.com
