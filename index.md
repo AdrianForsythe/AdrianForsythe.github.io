@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: single
+author_profile: true
+title:
+header:
 ---
 
 ## About Me
