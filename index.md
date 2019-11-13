@@ -1,9 +1,5 @@
 ---
 layout: default
-author_profile: true
-title:
-header:
-  overlay_color: "#000"
 ---
 
 ## Adrian Forsythe
