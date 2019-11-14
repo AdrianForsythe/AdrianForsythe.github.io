@@ -26,14 +26,14 @@ import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
-    "proceeding": {
-        "file" : "proceedings.bib",
-        "venuekey": "booktitle",
-        "venue-pretext": "In the proceedings of ",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
-        
-    },
+#    "proceeding": {
+#        "file" : "proceedings.bib",
+#        "venuekey": "booktitle",
+#        "venue-pretext": "In the proceedings of ",
+#        "collection" : {"name":"publications",
+#                        "permalink":"/publication/"}
+#        
+#    },
     "journal":{
         "file": "pubs.bib",
         "venuekey" : "journal",
@@ -52,7 +52,6 @@ html_escape_table = {
 def html_escape(text):
     """Produce entities within text."""
     return "".join(html_escape_table.get(c,c) for c in text)
-
 
 for pubsource in publist:
     parser = bibtex.Parser()
@@ -153,7 +152,7 @@ for pubsource in publist:
 
             with open("../_publications/" + md_filename, 'w') as f:
                 f.write(md)
-            print(f'SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
+            print('SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
         # field may not exist for a reference
         except KeyError as e:
             print(f'WARNING Missing Expected Field {e} from entry {bib_id}: \"', b["title"][:30],"..."*(len(b['title'])>30),"\"")

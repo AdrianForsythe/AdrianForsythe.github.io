@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title:
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -38,26 +38,16 @@ Publications
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+   
+Awards and Other Achievements
 ======
 * Awarded Canadian Botany Association Luella K. Weresub Memorial Award for 2019 ($500)
 * Recipient of the Outstanding Research Publication in Ecology and Evolution for the 2018-2019 academic year. ($350)
 * Recipient of the Outstanding Leadership Award for the 2018-2019 academic year. ($350)
 * Recipient of a Service to the Department Award during the 2017-2018 academic year. ($350)
-* Awarded an Ontario Graduate Scholarship (OGS) during the 2016-2017 academic year. ($15 000)
+* Awarded an Ontario Graduate Scholarship (OGS, ~ $15 000)
+  * During the 2019-2020 academic year
+  * During the 2016-2017 academic year
 * Lead organizer for Ontario Ethology, Ecology, and Evolution 2019 conference.
   * The largest graduate student-organized biology/psychology event in Ontario
 * IQAP Committee 2018, Graduate Student Representative
