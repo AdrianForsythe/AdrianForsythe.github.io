@@ -309,3 +309,15 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+galleries:
+ # gallery number one
+ 1:
+   # row one in gallery one
+   -
+     - { url: 'images/users_year.gif', alt: 'alt 1'}
+   # row two in gallery one
+   -
+     - { url: 'images/raster_pca_map.png', alt: 'alt 2'}
+     - { url: 'images/major_roads.png', alt: 'alt 3'}
+
