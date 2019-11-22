@@ -1,1 +1,1 @@
-Github repo for my personl page. Based on academicpages template.
+Github repo for my personal web page, based on the academicpages template.
