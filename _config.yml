@@ -273,7 +273,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-miniaudio
 
 # Archives
 #  Type

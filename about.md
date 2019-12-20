@@ -15,6 +15,4 @@ Some of my more recent work has been focused on how human influence may have imp
 
 ***
 
-A recent interview with me on "AlmaMAC", McMaster's radio station 93.3 CFMU:
-
-{% miniaudio 'https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-9-3/25951353-44100-2-6d37e687523c.m4a' %}
+[A recent interview with me on "AlmaMAC", McMaster's radio station 93.3 CFMU](https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-9-3/25951353-44100-2-6d37e687523c.m4a)
