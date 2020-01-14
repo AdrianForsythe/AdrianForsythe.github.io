@@ -309,9 +309,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-images:
-   - image: images/gallery/users_year.gif
-   - image: images/gallery/raster_pca_map.png
-   - image: images/gallery/major_roads.png
-
