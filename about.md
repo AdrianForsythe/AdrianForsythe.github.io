@@ -9,10 +9,11 @@ redirect_from:
 
 I am a PhD Candidate in the Department of Biology at McMaster University. In the Xu Lab, I conduct research on the genetics/genomics of fungal pathogens. I am interested in the factors that promote rapid adaptation of pathogens to non-native hosts/environments.
 
-![I put my most impressive image here ^w^](/images/gallery/users_year.gif){:.lightbox}
+Some of my more recent work has been focused on how human influence may have impacted the spread of White-nose Syndrome.
 
-Some of my more recent work has been focused on how human influence may have impacted the spread of White-nose Syndrome. The animation above shows the movement of human visitors between caves in North America. 
+[A recent interview with me on "AlmaMAC", McMaster's radio station 93.3 CFMU](https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-9-3/25951353-44100-2-6d37e687523c.m4a)
 
 ***
 
-[A recent interview with me on "AlmaMAC", McMaster's radio station 93.3 CFMU](https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-9-3/25951353-44100-2-6d37e687523c.m4a)
+ {% include image-gallery.html folder="/images/gallery" %} 
+
