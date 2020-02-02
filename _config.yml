@@ -11,9 +11,9 @@ title                    : "Adrian Forsythe"
 title_separator          : "-"
 name                     : &name "Adrian Forsythe"
 description              : &description "Academic CV"
-url                      : https://AdrianForsythe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://adrianforsythe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "AdrianForsythe/academicpages.github.io"
+repository               : "AdrianForsythe/AdrianForsythe.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -309,3 +309,15 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+gallery:
+  - image_path: major_roads.png
+    alt: "placeholder image 1"
+    title: "Major Roads in North America"
+  - image_path: raster_pca_map.png
+    alt: "placeholder image 2"
+    title: "Raster PCA on BioClim Variables"
+  - image_path: users_year.gif
+    alt: "placeholder image 3"
+    title: "The Human Connection Between Caves"
+

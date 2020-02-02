@@ -18,20 +18,35 @@ Education
 Skills
 ======
 Wet Lab:
-* Microbiology strain management
+* General microbiology lab skills
+* Sstrain management
 * Biosaftey level II 
+* Library Preparation for Amplicon Sequencing (16S + ITS)
+* qPCR & PCR
+* Microdissection
 
 Dry Lab:
-* Bioinformatic scripting
+* Scripting languages
  * Bash
  * Python
+ * Ruby (enough to build this site)
+ * Nextflow
 * R
-  * tidyverse
-  * ggplot
-  * statistical modelling
-  * spatial data
-  * web scraping
-* Github
+  * Data managment (tidyverse)
+  * Data Visualization (ggplot2)
+  * Multivariate analyses (PCA)
+  * Statistical modelling (lme4)
+  * Spatial data analyses (sp, sf, gdistance, ResistanceGA)
+  * Web scraping (rvest, Rselenium)
+  * OTU table datasets (phyloseq)
+* Bioinformatics Skills
+  * Variant Calling (gatk, freebayes)
+  * Genome alignment, assembly
+  * Gene Annotation
+  * Copy number variants
+  * Metagenomic/Metabarcoding (qiime2)
+* Github project management
+* LaTeX Typesetting (Overleaf <3)
 
 Publications
 ======
