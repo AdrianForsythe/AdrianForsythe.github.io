@@ -15,5 +15,6 @@ Some of my more recent work has been focused on how human influence may have imp
 
 ***
 
- {% include image-gallery.html folder="/images/gallery" %} 
+![](/images/colourful-counties.png "Count level WNS incidence") 
+![](/images/raster_pca_map.png "Raster for BioClim Variables")
 

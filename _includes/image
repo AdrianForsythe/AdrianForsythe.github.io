@@ -1,0 +1,4 @@
+<a href="{{ include.link | relative_url }}" id="galleryImage">
+  <img src="{{ include.thumb | relative_url }}" class="galleryThumb" />
+</a>
+
