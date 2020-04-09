@@ -15,6 +15,5 @@ Some of my more recent work has been focused on how human influence may have imp
 
 ***
 
-![](/images/colourful-counties.png "Count level WNS incidence") 
-![](/images/raster_pca_map.png "Raster for BioClim Variables")
+![Measuring the human connection between cave in counties impacted by White-Nose Syndrome](/images/num-geocache.png) 
 

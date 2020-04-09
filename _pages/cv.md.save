@@ -18,36 +18,36 @@ Education
 Skills
 ======
 Wet Lab:
-* General microbiology lab skills
+* General microbiology wet lab skills
 * Strain management
 * Biosaftey level II 
 * Library Preparation for Amplicon Sequencing
 	* 16S + ITS
 * qPCR & PCR
-	* Absolute & relative quantitation assays
-	* SYBER and probe-based assays
-* Microdissection of Eukaryotic cells
+	* Relative & absolute quantitation methods
+	* SYBER & Probe-based assays
+* Microdissection
 
 Dry Lab:
 * Scripting languages
 	* Bash
-	* Python
+	* Basic Python
 	* Nextflow
-       	* Ruby (enough to build this site)
+	- Professor, Department of Biology McMaster University
 * R
-	* Data managment (`tidyverse`)
-	* Data Visualization (`ggplot2`)
-	* Multivariate analyses (PCA)
-        * Statistical modelling (`lme4`)
-        * Spatial data analyses (`sp`, `sf`, `gdistance`, `ResistanceGA`)
-        * Web scraping (`rvest`, `Rselenium`)
-        * OTU datasets (`phyloseq`)
+  * Data managment (tidyverse)
+  * Data Visualization (ggplot2)
+  * Multivariate analyses (PCA)
+  * Statistical modelling (lme4)
+  * Spatial data analyses (sp, sf, gdistance, ResistanceGA)
+  * Web scraping (rvest, Rselenium)
+  * OTU table datasets (phyloseq)
 * Bioinformatics Skills
-        * Variant Calling (`gatk`, `freebayes`, etc.)
-        * Genome alignment, assembly (`bwa`, `velvet`, `SPades`, etc.)
-        * Gene Annotation
-        * Copy number variants (`controlFREEC`)
-        * Metagenomic/Metabarcoding (`qiime2`)
+  * Variant Calling (gatk, freebayes)
+  * Genome alignment, assembly
+  * Gene Annotation
+  * Copy number variants
+  * Metagenomic/Metabarcoding (qiime2)
 * Github project management
 * LaTeX Typesetting (Overleaf <3)
 

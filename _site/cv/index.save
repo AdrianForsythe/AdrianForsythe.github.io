@@ -19,7 +19,7 @@
 
 
 
-<title>About me - Adrian Forsythe</title>
+<title>Adrian Forsythe</title>
 
 
 
@@ -29,15 +29,13 @@
 
 <meta property="og:locale" content="en-CA">
 <meta property="og:site_name" content="Adrian Forsythe">
-<meta property="og:title" content="About me">
+<meta property="og:title" content="Adrian Forsythe">
 
 
-  <link rel="canonical" href="http://localhost:4000/">
-  <meta property="og:url" content="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/cv/">
+  <meta property="og:url" content="http://localhost:4000/cv/">
 
 
-
-  <meta property="og:description" content="About me">
 
 
 
@@ -167,8 +165,6 @@
 
 
 
-
-
 <div id="main" role="main">
   
 
@@ -250,65 +246,240 @@
   </div>
 
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="About me">
-    <meta itemprop="description" content="About me">
+  <div class="archive">
+    
+      <h1 class="page__title"></h1>
     
     
 
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 class="page__title" itemprop="headline">About me
-</h1>
-          
-        
-        
-        
-        
-             
-        
+Education
+======
+* H.BSc. in Biology: Trent University, 2010-14
+* M.Sc. in Biology, Spec. Astrobiology: McMaster University, 2014-16
+* Ph.D. in Biology: McMaster University, 2016-Current
+
+Skills
+======
+Wet Lab:
+* General microbiology wet lab skills
+* Strain management
+* Biosaftey level II 
+* Library Preparation for Amplicon Sequencing
+	* 16S + ITS
+* qPCR & PCR
+	* Relative & absolute quantitation methods
+	* SYBER & Probe-based assays
+* Microdissection
+
+Dry Lab:
+* Scripting languages
+	* Bash
+	* Basic Python
+	* Nextflow
+	- Professor, Department of Biology McMaster University
+* R
+  * Data managment (tidyverse)
+  * Data Visualization (ggplot2)
+  * Multivariate analyses (PCA)
+  * Statistical modelling (lme4)
+  * Spatial data analyses (sp, sf, gdistance, ResistanceGA)
+  * Web scraping (rvest, Rselenium)
+  * OTU table datasets (phyloseq)
+* Bioinformatics Skills
+  * Variant Calling (gatk, freebayes)
+  * Genome alignment, assembly
+  * Gene Annotation
+  * Copy number variants
+  * Metagenomic/Metabarcoding (qiime2)
+* Github project management
+* LaTeX Typesetting (Overleaf <3)
+
+Publications
+======
+  <ul>
     
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
-        <p>I am a PhD Candidate in the Department of Biology at McMaster University. In the Xu Lab, I conduct research on the genetics/genomics of fungal pathogens. I am interested in the factors that promote rapid adaptation of pathogens to non-native hosts/environments.</p>
-
-<p>Some of my more recent work has been focused on how human influence may have impacted the spread of White-nose Syndrome.</p>
-
-<p><a href="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-9-3/25951353-44100-2-6d37e687523c.m4a">A recent interview with me on “AlmaMAC”, McMaster’s radio station 93.3 CFMU</a></p>
-
-<hr />
-
-<p><img src="/images/num-geocache.png" alt="" title="Measuring the human connection between cave in counties impacted by White-Nose Syndrome" /> 
-#<img src="/images/raster_pca_map.png" alt="" title="Raster for BioClim Variables" /></p>
-
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
 
 
 
 
-      </footer>
 
-      
-
-      
-
-
-    </div>
-
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li>
     
-  </article>
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2016-01-01-Gen-env-crypto" rel="permalink">Genetic and environmental influences on the germination of basidiospores in the Cryptococcus neoformans species complex
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Forsythe, A., Vogan, A., &amp; Xu, J. (2016). Genetic and environmental influences on the germination of basidiospores in the Cryptococcus neoformans species complex. Nature Publishing Group, 6(August), 1–12. https://doi.org/10.1038/srep33828</p> 
+    </li>
+ </article>
+</div>
 
   
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2016-01-01-Peer-review" rel="permalink">The evolution of peer review as a basis for scientific publication: directional selection towards a robust discipline?
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Ferreira, C., Bastille-Rousseau, G., Bennett, A. M., Ellington, E. H., Terwissen, C., Austin, C., … others. (2016). The evolution of peer review as a basis for scientific publication: directional selection towards a robust discipline? Biological Reviews, 91(3), 597–610.</p> 
+    </li>
+ </article>
+</div>
+
   
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2016-01-01-bookchpt" rel="permalink">Filamentous fungi in fermented foods. Fermented Foods, Part I: Biochemistry and Biotechnology
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Ashu, E., Forsythe, A., Vogan, A. A., &amp; Xu, J. (2016). Filementous fungi in fermented foods. Fermented Foods, Part I: Biochemistry and Biotechnology, 45e75.</p> 
+    </li>
+ </article>
+</div>
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2017-01-01-eta" rel="permalink">Limited evidence of fungicide-driven triazole-resistant Aspergillus fumigatus in Hamilton, Canada
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Ashu, E. E., Kim, G. Y., Roy-Gayos, P., Dong, K., Forsythe, A., Giglio, V., … Xu, J. (2017). Limited evidence of fungicide-driven triazole-resistant Aspergillus fumigatus in Hamilton, Canada. Canadian Journal of Microbiology, (999), 1–12.</p> 
+    </li>
+ </article>
+</div>
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2017-01-01-mito" rel="permalink">The complete mitochondrial genome of the White-Nose Syndrome pathogen, Pseudogymnoascus destructans
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Forsythe, A., &amp; Xu, J. (2017). The complete mitochondrial genome of the White-Nose Syndrome pathogen, Pseudogymnoascus destructans. Mitochondrial DNA Part B, 2(1), 48–49.</p> 
+    </li>
+ </article>
+</div>
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2018-01-01-aem" rel="permalink">Phenotypic divergence along geographic gradients reveals potential for rapid adaptation of the white-nose syndrome pathogen, Pseudogymnoascus destructans, in North America
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Forsythe, A., Giglio, V., Asa, J., &amp; Xu, J. (2018). Phenotypic divergence along geographic gradients reveals potential for rapid adaptation of the white-nose syndrome pathogen, Pseudogymnoascus destructans, in North America. Applied and Environmental Microbiology, 84(16), 1–16. https://doi.org/10.1128/AEM.000863-18</p> 
+    </li>
+ </article>
+</div>
+
+  
+    
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li>
+    
+    <h3 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/publication/2018-01-01-lepista" rel="permalink">Genetic diversity of lepista nuda (Agaricales, Basidiomycota) in Northeast China as indicated by SRAP and ISSR markers
+</a>
+      
+    </h3>
+    
+    <p class="archive__item-excerpt" itemprop="description">Du, J., Guo, H.-B., Li, Q., Forsythe, A., Chen, X.-H., &amp; Yu, X.-D. (2018). Genetic diversity of lepista nuda (Agaricales, Basidiomycota) in Northeast China as indicated by SRAP and ISSR markers. PLoS ONE, 13(8). https://doi.org/10.1371/journal.pone.0202761</p> 
+    </li>
+ </article>
+</div>
+
+  </ul>
+   
+Awards and Other Achievements
+======
+* Awarded Canadian Botany Association Luella K. Weresub Memorial Award for 2019 ($500)
+* Recipient of the Outstanding Research Publication in Ecology and Evolution for the 2018-2019 academic year. ($350)
+* Recipient of the Outstanding Leadership Award for the 2018-2019 academic year. ($350)
+* Recipient of a Service to the Department Award during the 2017-2018 academic year. ($350)
+* Awarded an Ontario Graduate Scholarship (OGS, ~ $15 000)
+  * During the 2019-2020 academic year
+  * During the 2016-2017 academic year
+* Lead organizer for Ontario Ethology, Ecology, and Evolution 2019 conference.
+  * The largest graduate student-organized biology/psychology event in Ontario
+* IQAP Committee 2018, Graduate Student Representative
+  * IQAP Learning Outcomes conducted a survey of Alumni and current students, analyzed responses, and summaries results to board of external reviewers.
+* Co-President of the McMaster Biology Graduate Student Society, 2017 - 2018 academic year
+  * I coordinated social events for other Graduate Students  and members of Faculty in the Biology department: Biology Graduate Research Day 2018.
+* SIAM Consulting 2018-current
+  * An advisor for the McMaster chapter of the Society of Industrial and Applied Mathematics (SIAM).
+  * I advise other researchers with projects using bioinformatics tools in Unix, statistical analysis in R, and LaTex. https://siam.mcmaster.ca/consulting.html
+* Overleaf Advisor (overleaf.com/advisors#!members)
+
+  </div>
 </div>
 
 
