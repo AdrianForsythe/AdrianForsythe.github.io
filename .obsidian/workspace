@@ -9,10 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_publications/2020-01-01-pdlandscape.md",
+            "file": "about.md",
+            "mode": "preview"
+          }
+        },
+        "group": "1cbbb4bfcefb74e1"
+      },
+      {
+        "id": "3b23ef05024e8fb5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "about.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "1cbbb4bfcefb74e1"
       }
     ],
     "direction": "vertical"
@@ -68,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_publications/2020-01-01-pdlandscape.md",
+                "file": "about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -78,24 +91,33 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "20c29b46c7be4bf8",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "2fa2789ffaeb3de6",
+  "active": "3b23ef05024e8fb5",
   "lastOpenFiles": [
-    "_publications/2020-01-01-pdlandscape.md",
-    "_publications/2018-01-01-lepista.md",
-    "_publications/2018-01-01-aem.md",
-    "Untitled.md",
-    "_pages/cv.md",
-    "_pages/archive-layout-with-content.md",
-    "_pages/about.md",
+    "about.md",
+    "markdown_generator/readme.md",
     "_pages/404.md",
-    "README.md"
+    "_pages/about.md",
+    "_pages/archive-layout-with-content.md",
+    "_pages/cv.md",
+    "_pages/markdown.md",
+    "_pages/non-menu-page.md",
+    "_pages/publications.md",
+    "_pages/sitemap.md"
   ]
 }

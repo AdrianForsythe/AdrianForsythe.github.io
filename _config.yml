@@ -82,10 +82,10 @@ analytics:
 author:
   name             : "Adrian Forsythe"
   avatar           : "profile.png"
-  bio              : "I'm a PhD student in the Xu Lab researching the fungal pathogen, Pseudogymnoascus destructans."
-  location         : "Hamilton, Ontario"
-  employer         :  McMaster University
-  pubmed           : 
+  bio              : "PostDoctoral Researcher"
+  location         : "Uppsala, Sweden"
+  employer         :  Uppsala University
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=zw1me-MBbngC&hl=en"
   email            : "adrian.e.forsythe@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Adrian_Forsythe"
@@ -320,4 +320,3 @@ gallery:
   - image_path: users_year.gif
     alt: "placeholder image 3"
     title: "The Human Connection Between Caves"
-
