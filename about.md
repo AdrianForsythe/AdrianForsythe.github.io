@@ -6,7 +6,11 @@ author_profile: true
 redirect_from:
 ---
 
-I use genetic/genomic techniques to study microbial ecology and host/pathogen interactions. In general, I am interested in how microbial communities respond to disruptions from anthropogenic influence. My PhD work concerned population genetics of the fungal pathogen responsible for White-Nose Syndrome in North American bats. Since joining the Guschanski Lab, my Postdoctoral research focuses on both the ancient and modern microbiomes of wild mammals and identifying antimicrobial resistance factors within these communities. The goal of my research is to ultimately contribute to conservation efforts to curb disruptions to microbial ecosystems.  |  ![Measuring the human connection between cave in counties impacted by White-Nose Syndrome](/images/eu-travellers.gif)   |
+In my PhD I used genomics to study the microbial ecology and population structure of the fungal pathogen, *Pseudogymnoascus destructans*.
+Currently, I am a PostDoc in the Guschanski Lab (Uppsala University), where my Postdoctoral research focuses on both the ancient and modern microbiomes of wild mammals and identifying antimicrobial resistance factors within these communities. The goal of my research is to ultimately contribute to conservation efforts to curb disruptions to microbial ecosystems.
+In general, I am interested in how microbial communities respond to disruptions caused by anthropogenic activity.
+
+![Measuring the human connection between cave in counties impacted by White-Nose Syndrome](/images/eu-travellers.gif)
 
 
 
