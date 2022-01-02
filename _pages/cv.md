@@ -9,11 +9,15 @@ redirect_from:
 
 {% include base_path %}
 
+Current Employment
+======
+* PostDoctoral Researcher in the Department of Animal Zoology: Uppsala University: 2020-
+
 Education
 ======
 * H.BSc. in Biology: Trent University, 2010-14
 * M.Sc. in Biology, Spec. Astrobiology: McMaster University, 2014-16
-* Ph.D. in Biology: McMaster University, 2016-Current
+* Ph.D. in Biology: McMaster University, 2016-2020
 
 Skills
 ======
@@ -26,14 +30,14 @@ Wet Lab:
 * qPCR & PCR
 	* Absolute & relative quantitation assays
 	* SYBER and probe-based assays
-* Microdissection of Eukaryotic cells
-
+* Micro-dissection of fungal cells
+* Ancient DNA
 Dry Lab:
 * Scripting languages
 	* Bash
 	* Python
-	* Nextflow
-       	* Ruby (enough to build this site)
+		* `snakemake` pipelines
+	* Ruby (enough to build this site)
 * R
 	* Data managment (`tidyverse`)
 	* Data Visualization (`ggplot2`)
@@ -47,7 +51,8 @@ Dry Lab:
         * Genome alignment, assembly (`bwa`, `velvet`, `SPades`, etc.)
         * Gene Annotation
         * Copy number variants (`controlFREEC`)
-        * Metagenomic/Metabarcoding (`qiime2`)
+        * Metagenomic/Metabarcoding 
+			* `qiime2`
 * Github project management
 * LaTeX Typesetting (Overleaf <3)
 
