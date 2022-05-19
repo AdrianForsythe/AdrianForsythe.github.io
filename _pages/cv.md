@@ -11,50 +11,60 @@ redirect_from:
 
 Current Employment
 ======
-* PostDoctoral Researcher in the Department of Animal Zoology: Uppsala University: 2020-
+* PostDoctoral Researcher in the Department of Animal Zoology: Uppsala University: September 2020 - September 2022
 
 Education
 ======
-* H.BSc. in Biology: Trent University, 2010-14
-* M.Sc. in Biology, Spec. Astrobiology: McMaster University, 2014-16
-* Ph.D. in Biology: McMaster University, 2016-2020
+* HBSc in Biology: Trent University, 2010-14
+* MSc in Biology, Spec. Astrobiology: McMaster University, 2014-16
+* PhD in Biology: McMaster University, 2016-2020
 
 Skills
 ======
-Wet Lab:
+## Wet Lab Skills
 * General microbiology lab skills
 * Strain management
 * Biosaftey level II 
-* Library Preparation for Amplicon Sequencing
-	* 16S + ITS
+* Library Preparation for Illumina Sequencing
 * qPCR & PCR
-	* Absolute & relative quantitation assays
+	* Probe and primer design
+	* Absolute & relative quantitation qPCR assays
 	* SYBER and probe-based assays
 * Micro-dissection of fungal cells
-* Ancient DNA
-Dry Lab:
-* Scripting languages
-	* Bash
-	* Python
-		* `snakemake` pipelines
-	* Ruby (enough to build this site)
+* Handling and processing of low-biomass samples
+* Working in a clean-room environment
+
+## Dry Lab
+* Bash Scripting
+* Python
+	* `biopython`
+	* `beautifulsoup4`
+	* `snakemake` pipelines
+* Nextflow
+	* Mostly experience with `nf-core` pipelines 
 * R
-	* Data managment (`tidyverse`)
-	* Data Visualization (`ggplot2`)
-	* Multivariate analyses (PCA)
-        * Statistical modelling (`lme4`)
-        * Spatial data analyses (`sp`, `sf`, `gdistance`, `ResistanceGA`)
-        * Web scraping (`rvest`, `Rselenium`)
-        * OTU datasets (`phyloseq`)
-* Bioinformatics Skills
-        * Variant Calling (`gatk`, `freebayes`, etc.)
-        * Genome alignment, assembly (`bwa`, `velvet`, `SPades`, etc.)
-        * Gene Annotation
-        * Copy number variants (`controlFREEC`)
-        * Metagenomic/Metabarcoding 
-			* `qiime2`
-* Github project management
-* LaTeX Typesetting (Overleaf <3)
+	* General Data Processing (`tidyverse`)
+	* Data Visualization (`ggplot2`, `plotly`, `gganimate`)
+	* Clustering/Dimensional Reduction (PCA, NMDS, UMAP)
+	* Statistical modelling (`lme4`)
+	* Analysis of Spatial Data Sets (`sp`, `sf`)
+	* Landscape genomics (`gdistance`, `ResistanceGA`)
+	* Web scraping (`rvest`, `Rselenium`)
+    * Metagenomic and OTU datasets (`phyloseq`,`qiime2`,`dada2`)
+* HPC Environments
+	* SLURM
+* Containerization (`singularity`, `docker`)
+* Anaconda
+* Bioinformatic Skills
+	* Variant Calling (`gatk`, `freebayes`, etc.)
+    * Genome alignment, assembly (`bwa`, `velvet`, `SPades`, etc.)
+    * Gene Annotation (`prokka`, `prodigal`)
+    * Pangenome Analyses (`roary`, `panaroo`)
+    * Copy number variants (`controlFREEC`)
+    * Metagenomic/Metabarcoding 
+    * Analysis of ancient DNA sequencing data
+* Project Management (`git`, GitHub, Jupyter Notebooks)
+* LaTeX Typesetting
 
 Publications
 ======
@@ -77,7 +87,7 @@ Awards and Other Achievements
   * IQAP Learning Outcomes conducted a survey of Alumni and current students, analyzed responses, and summaries results to board of external reviewers.
 * Co-President of the McMaster Biology Graduate Student Society, 2017 - 2018 academic year
   * I coordinated social events for other Graduate Students  and members of Faculty in the Biology department: Biology Graduate Research Day 2018.
-* SIAM Consulting 2018-current
+* SIAM Consulting 2018-2020
   * An advisor for the McMaster chapter of the Society of Industrial and Applied Mathematics (SIAM).
-  * I advise other researchers with projects using bioinformatics tools in Unix, statistical analysis in R, and LaTex. https://siam.mcmaster.ca/consulting.html
+  * I advised other researchers with projects using bioinformatics tools in Unix, statistical analysis in R, and LaTex. https://siam.mcmaster.ca/consulting.html
 * Overleaf Advisor (overleaf.com/advisors#!members)
