@@ -7,8 +7,11 @@
         "id": "6849f0991f6c16f9",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "about.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,6 +97,8 @@
   },
   "active": "6849f0991f6c16f9",
   "lastOpenFiles": [
+    "about.md",
+    "_pages/about.md",
     "_posts/Global road networks in R.md",
     "_posts/Wind patterns using rWind.md",
     "_posts/WNS Landscape Genomics.md",
@@ -100,8 +106,6 @@
     "_posts/How to collect information on the isolation sources of a collection of different types of bacteria?.md",
     "_posts/Does Human Activity Contribute to the Spread of White-Nose Syndrome?.md",
     "_pages/cv.md",
-    "_pages/archive-layout-with-content.md",
-    "_pages/about.md",
-    "_pages/404.md"
+    "_pages/archive-layout-with-content.md"
   ]
 }
