@@ -20,19 +20,18 @@ I apply my knowledge of ecology and microbiology to address problems using genom
 
 ## Research Projects
 
-### PhD
+### PhD Thesis
 
 In my PhD I used genomics to study the microbial ecology and population structure of the fungal pathogen, _Pseudogymnoascus destructans_. Find more about my thesis [here](/Thesis/).
 
 <img align="right" style="width:200px;" src="images/aem-cover.png">
+<img align="right" style="width:200px;" alt="Movement of users between caves" src="images/users_year.gif">
 
 [An interview about my PhD research on McMaster's radio station 93.3 CFMU](https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-9-3/25951353-44100-2-6d37e687523c.m4a)
 
 ### Geochaching and WNS
 
 Recently I have been working on a project to use novel data streams to investigate the connection between human activity and the spread of the WNS pathogen in North America.
-
-![Movement of users between caves](images/users_year.gif)
 
 Read more about this project [here](\_posts/Does Human Activity Contribute to the Spread of White-Nose Syndrome?.md)
 
