@@ -6,7 +6,6 @@ tags:
   - posts
 ---
 
-```{html}
 <!DOCTYPE html>
 
 <html>
@@ -17,9 +16,7 @@ tags:
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
-
 <meta name="author" content="Adrian Forsythe" />
-
 
 <title>How to automate processing of sanger sequencing data in R</title>
 
@@ -63,13 +60,6 @@ if (window.hljs) {
 }
 </script>
 
-
-
-
-
-
-
-
 <style type="text/css">
 .main-container {
   max-width: 940px;
@@ -95,8 +85,6 @@ pre code {
   padding: 0;
 }
 </style>
-
-
 
 <!-- tabsets -->
 
@@ -156,29 +144,19 @@ pre code {
 
 <!-- code folding -->
 
-
-
-
 </head>
 
 <body>
 
-
 <div class="container-fluid main-container">
 
-
-
-
 <div id="header">
-
-
 
 <h1 class="title toc-ignore">How to automate processing of sanger sequencing data in R</h1>
 <h4 class="author">Adrian Forsythe</h4>
 <h4 class="date">21/05/2022</h4>
 
 </div>
-
 
 <pre class="r"><code>source(&#39;~/PhD/Anti-Pd/inhibition/SangerAnalysis/consensus/stubs.R&#39;)
 # setwd(&quot;inhibition/SangerAnalysis/TR_sequencingresults/full_inhibitors/round2&quot;)</code></pre>
@@ -322,9 +300,6 @@ write.csv(do.call(rbind,blast_results),&quot;results/full_inhibitors.csv&quot;)
 writeXStringSet(x = DNAStringSet(conseqs), filepath = &#39;results/consensus.fa&#39;)</code></pre>
 </div>
 
-
-
-
 </div>
 
 <script>
@@ -356,7 +331,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
   (function () {
@@ -369,4 +343,3 @@ $(document).ready(function () {
 
 </body>
 </html>
-```
