@@ -4,7 +4,13 @@ main:
     url: /publications/
 
   - title: "Talks"
-    url: /talks/    
+    url: /talks/
 
   - title: "CV"
     url: /cv/
+
+  - title: "PhD Thesis"
+    url: /Thesis/
+
+  - title: "Blog Posts"
+    url: /year-archive/
