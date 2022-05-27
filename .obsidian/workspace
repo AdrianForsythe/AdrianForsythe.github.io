@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/WNS Landscape Genomics.md",
+            "file": "about.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/WNS Landscape Genomics.md",
+                "file": "about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "17833eb259b33e36",
   "lastOpenFiles": [
+    "about.md",
     "_posts/WNS Landscape Genomics.md",
     "_posts/Wind patterns using rWind.md",
     "_posts/How to collect information on the isolation sources of a collection of different types of bacteria?.md",
@@ -104,7 +105,6 @@
     "_posts/Does Human Activity Contribute to the Spread of White-Nose Syndrome?.md",
     "_portfolio/phdthesis.md",
     "images/Screenshot from 2022-05-15 21-08-31.png",
-    "images/colourful-counties.png",
-    "images/landscape-surface-plots.png"
+    "images/colourful-counties.png"
   ]
 }
