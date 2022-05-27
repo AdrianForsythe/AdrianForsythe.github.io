@@ -1,9 +1,7 @@
 ---
 title: "PhD Thesis"
 excerpt: "Short description of my PhD Thesis"
-collection: portfolio
-layout: archive
-permalink: /Thesis/
+permalink: /_posts/phdthesis.md
 ---
 
 ## The main structure of my thesis
