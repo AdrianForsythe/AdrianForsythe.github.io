@@ -74,10 +74,11 @@ I apply my knowledge of ecology and microbiology to address problems using genom
 
 <img align="right" style="width:200px;" src="images/aem-cover.png">
 
-In my PhD I used genomics to study the microbial ecology and population structure of the fungal pathogen, _Pseudogymnoascus destructans_. Find more about my thesis [here](/Thesis/).
+In my PhD I used genomics to study the microbial ecology and population structure of the fungal pathogen, _Pseudogymnoascus destructans_. Find more about my thesis [here](posts/2020/phdthesis/index.html).
 
 [An interview about my PhD research on McMaster's Science Podcast](https://d3ctxlq1ktw2nl.cloudfront.net/staging/2019-9-3/25951353-44100-2-6d37e687523c.m4a)
-White-Nose Syndrome
+
+### Probiotics for White-Nose Syndrome
 
 I helped to develop a probiotic treatment for White-Nose Syndrome in bats, which is current undergoing field trials in British Columbia, Canada. I contributed to this project by screening bacterial strains for antifungal activity and optimizing the dosage and delivery system in preparation for field trials. I monitored probiotic levels in the field using quantitative assays. I also processed all genomic data generated from this project.
 [Press Coverage of this Project](cbc.ca/news/canada/british-columbia/bats-white-nose-syndrome-scientists-1.5247454)
@@ -87,6 +88,6 @@ I helped to develop a probiotic treatment for White-Nose Syndrome in bats, which
 <img align="right" style="width:200px;" alt="Movement of users between caves" src="images/users_year.gif">
 Recently I have been working on a project to use novel data streams to investigate the connection between human activity and the spread of the WNS pathogen in North America.
 
-Read more about this project [here](\_posts/Does Human Activity Contribute to the Spread of White-Nose Syndrome?.md)
+Read more about this project [here](posts/2020/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/index.html)
 
 [![AdrianForsythe's stats](https://github-readme-stats.vercel.app/api?username=AdrianForsythe)](https://github.com/anuraghazra/github-readme-stats)
