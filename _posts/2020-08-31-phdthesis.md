@@ -1,7 +1,7 @@
 ---
 title: "PhD Thesis"
 excerpt: "Short description of my PhD Thesis"
-permalink: /_posts/phdthesis.md
+permalink: /posts/2020/phdthesis
 ---
 
 ## The main structure of my thesis
