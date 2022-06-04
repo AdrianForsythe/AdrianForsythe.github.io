@@ -1,12 +1,7 @@
 ---
 title: "Does Human Activity Contribute to the Spread of White-Nose Syndrome?"
-<<<<<<< HEAD:_posts/2020-01-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome.md
 date: 2020-01-01
-permalink: /posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome
-=======
-date:
-permalink: /posts/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/
->>>>>>> ab8d67280c1c5ee8d3edec8b474be0e63ab46d84:_posts/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome.md
+permalink: /posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/
 tags:
   - phd research
   - epidemic

@@ -19,7 +19,7 @@
 
 
 
-<title>How to collect information on the isolation sources of a collection of different types of bacteria? - Adrian Forsythe</title>
+<title>PhD Thesis - Adrian Forsythe</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-CA">
 <meta property="og:site_name" content="Adrian Forsythe">
-<meta property="og:title" content="How to collect information on the isolation sources of a collection of different types of bacteria?">
+<meta property="og:title" content="PhD Thesis">
 
 
-  <link rel="canonical" href="https://adrianforsythe.github.io/posts/2021/01/isosources">
-  <meta property="og:url" content="https://adrianforsythe.github.io/posts/2021/01/isosources">
+  <link rel="canonical" href="https://adrianforsythe.github.io/posts/2020/09/phdthesis/">
+  <meta property="og:url" content="https://adrianforsythe.github.io/posts/2020/09/phdthesis/">
 
 
 
-  <meta property="og:description" content="How to get basic isolation source information from ncbi assembly accession">
+  <meta property="og:description" content="Short description of my PhD Thesis">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2021-01-01T00:00:00-08:00">
+  <meta property="article:published_time" content="2020-09-01T00:00:00-07:00">
 
 
 
@@ -160,10 +160,10 @@
             <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/cv/">CV</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/posts/2020/09/">PhD Thesis</a></li>
+            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/posts/2020/09/phdthesis.html">PhD Thesis</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/page-archive/">Portfolio</a></li>
+            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/year-archive/">Portfolio</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -262,15 +262,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="How to collect information on the isolation sources of a collection of different types of bacteria?">
-    <meta itemprop="description" content="How to get basic isolation source information from ncbi assembly accession">
-    <meta itemprop="datePublished" content="January 01, 2021">
+    <meta itemprop="headline" content="PhD Thesis">
+    <meta itemprop="description" content="Short description of my PhD Thesis">
+    <meta itemprop="datePublished" content="September 01, 2020">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">How to collect information on the isolation sources of a collection of different types of bacteria?
+          <h1 class="page__title" itemprop="headline">PhD Thesis
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
@@ -284,7 +284,7 @@
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2021-01-01T00:00:00-08:00">January 01, 2021</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-09-01T00:00:00-07:00">September 01, 2020</time></p>
         
         
              
@@ -294,12 +294,31 @@
       
 
       <section class="page__content" itemprop="text">
-        <h1 id="how-to-get-basic-isolation-source-information-from-ncbi-assembly-accession">How to get basic isolation source information from ncbi assembly accession</h1>
+        <h1 id="population-genetic-investigation-of-the-white-nose-syndrome-pathogenpseudogymonascus-destructans-in-north-america">Population Genetic Investigation of the White-Nose Syndrome Pathogen,<em>Pseudogymonascus destructans</em>, in North America</h1>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>esearch <span class="nt">-query</span> <span class="o">[</span>accession] <span class="nt">-db</span> assembly | elink <span class="nt">-target</span> biosample | esummary | xtract <span class="nt">-pattern</span> DocumentSummary <span class="nt">-first</span> Title <span class="nt">-element</span> Accession <span class="nt">-group</span> Attribute <span class="nt">-if</span> Attribute@harmonized_name <span class="nt">-equals</span> <span class="s2">"isolation_source"</span> <span class="nt">-element</span> Attribute
-</code></pre></div></div>
+<h2 id="the-main-structure-of-my-thesis">The main structure of my thesis</h2>
 
-<p>You can call this from an Rscript using <code class="language-plaintext highlighter-rouge">system()</code></p>
+<table>
+  <thead>
+    <tr>
+      <th>Chapter 1</th>
+      <th>Chapter 2</th>
+      <th>Chapter 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Phenotypic diversity of WNS pathogen</td>
+      <td>Landscape genetics and multilocus genotype patterns of the WNS pathogen in North America</td>
+      <td>Structural variants in the WNS pathogen</td>
+    </tr>
+    <tr>
+      <td><a href="/_publications/2018-01-01-aem.md">Paper</a></td>
+      <td><a href="/_publications/2021-01-01-pdlandscape.md">Paper</a> <a href="/posts/2020/08/WNSLandscapeGenomics">Post</a></td>
+      <td><em>In prep</em></td>
+    </tr>
+  </tbody>
+</table>
 
         
       </section>
@@ -324,15 +343,15 @@
     
       
       
-      <a href="https://adrianforsythe.github.io/tags/#big-data" class="page__taxonomy-item" rel="tag">big data</a><span class="sep">, </span>
+      <a href="https://adrianforsythe.github.io/tags/#disease" class="page__taxonomy-item" rel="tag">disease</a><span class="sep">, </span>
     
       
       
-      <a href="https://adrianforsythe.github.io/tags/#isolation-sources" class="page__taxonomy-item" rel="tag">isolation sources</a><span class="sep">, </span>
+      <a href="https://adrianforsythe.github.io/tags/#epidemic" class="page__taxonomy-item" rel="tag">epidemic</a><span class="sep">, </span>
     
       
       
-      <a href="https://adrianforsythe.github.io/tags/#metagenomics" class="page__taxonomy-item" rel="tag">metagenomics</a>
+      <a href="https://adrianforsythe.github.io/tags/#phd-research" class="page__taxonomy-item" rel="tag">phd research</a>
     
     </span>
   </p>
@@ -349,11 +368,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://adrianforsythe.github.io/posts/2021/01/isosources" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://adrianforsythe.github.io/posts/2020/09/phdthesis/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://adrianforsythe.github.io/posts/2021/01/isosources" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://adrianforsythe.github.io/posts/2020/09/phdthesis/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://adrianforsythe.github.io/posts/2021/01/isosources" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://adrianforsythe.github.io/posts/2020/09/phdthesis/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -361,11 +380,11 @@
 
   <nav class="pagination">
     
-      <a href="https://adrianforsythe.github.io/posts/2020/09/phdthesis" class="pagination--pager" title="PhD Thesis
+      <a href="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics/" class="pagination--pager" title="WNS Landscape Genomics
 ">Previous</a>
     
     
-      <a href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo" class="pagination--pager" title="How to automate processing of sanger sequencing data in R
+      <a href="https://adrianforsythe.github.io/posts/2021/01/isosources/" class="pagination--pager" title="How to collect information on the isolation sources of a collection of different types of bacteria?
 ">Next</a>
     
   </nav>
@@ -395,7 +414,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo" rel="permalink">How to automate processing of sanger sequencing data in R
+        <a href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/" rel="permalink">How to automate processing of sanger sequencing data in R
 </a>
       
     </h2>
@@ -440,7 +459,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://adrianforsythe.github.io/posts/2020/09/phdthesis" rel="permalink">PhD Thesis
+        <a href="https://adrianforsythe.github.io/posts/2021/01/isosources/" rel="permalink">How to collect information on the isolation sources of a collection of different types of bacteria?
 </a>
       
     </h2>
@@ -456,11 +475,12 @@
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-09-01T00:00:00-07:00">September 01, 2020</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2021-01-01T00:00:00-08:00">January 01, 2021</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>Short description of my PhD Thesis</p>
+    <p class="archive__item-excerpt" itemprop="description"><h1 id="how-to-get-basic-isolation-source-information-from-ncbi-assembly-accession">How to get basic isolation source information from ncbi assembly accession</h1>
+
 </p>
     
     
@@ -482,7 +502,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://adrianforsythe.github.io/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="permalink">
+        <a href="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics/" rel="permalink">WNS Landscape Genomics
 </a>
       
     </h2>
@@ -492,11 +512,13 @@
 
 
   
-	  5 minute read
+	  less than 1 minute read
 	
 </p>
     
 
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-08-01T00:00:00-07:00">August 01, 2020</time></p>
         
 
     
@@ -522,7 +544,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://adrianforsythe.github.io/posts/2020/phdthesis" rel="permalink">PhD Thesis
+        <a href="https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="permalink">Does Human Activity Contribute to the Spread of White-Nose Syndrome?
 </a>
       
     </h2>
@@ -532,17 +554,18 @@
 
 
   
-	  less than 1 minute read
+	  5 minute read
 	
 </p>
     
 
         
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-08-31T00:00:00-07:00">August 31, 2020</time></p>
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-01-01T00:00:00-08:00">January 01, 2020</time></p>
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>Short description of my PhD Thesis</p>
+    <p class="archive__item-excerpt" itemprop="description"><h2 id="the-problem">The Problem</h2>
+
 </p>
     
     
