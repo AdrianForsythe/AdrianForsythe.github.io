@@ -19,7 +19,7 @@
 
 
 
-<title>Does Human Activity Contribute to the Spread of White-Nose Syndrome? - Adrian Forsythe</title>
+<title>PhD Thesis - Adrian Forsythe</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-CA">
 <meta property="og:site_name" content="Adrian Forsythe">
-<meta property="og:title" content="Does Human Activity Contribute to the Spread of White-Nose Syndrome?">
+<meta property="og:title" content="PhD Thesis">
 
 
-  <link rel="canonical" href="https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome">
-  <meta property="og:url" content="https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome">
+  <link rel="canonical" href="https://adrianforsythe.github.io/posts/2020/phdthesis">
+  <meta property="og:url" content="https://adrianforsythe.github.io/posts/2020/phdthesis">
 
 
 
-  <meta property="og:description" content="The Problem">
+  <meta property="og:description" content="Short description of my PhD Thesis">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-01-01T00:00:00-08:00">
+  <meta property="article:published_time" content="2020-08-31T00:00:00-07:00">
 
 
 
@@ -262,29 +262,29 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Does Human Activity Contribute to the Spread of White-Nose Syndrome?">
-    <meta itemprop="description" content="The Problem">
-    <meta itemprop="datePublished" content="January 01, 2020">
+    <meta itemprop="headline" content="PhD Thesis">
+    <meta itemprop="description" content="Short description of my PhD Thesis">
+    <meta itemprop="datePublished" content="August 31, 2020">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Does Human Activity Contribute to the Spread of White-Nose Syndrome?
+          <h1 class="page__title" itemprop="headline">PhD Thesis
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
 
 
   
-	  5 minute read
+	  less than 1 minute read
 	
 </p>
           
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-01-01T00:00:00-08:00">January 01, 2020</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-08-31T00:00:00-07:00">August 31, 2020</time></p>
         
         
              
@@ -294,135 +294,29 @@
       
 
       <section class="page__content" itemprop="text">
-        <h2 id="the-problem">The Problem</h2>
-
-<p>White-nose Syndrome (WNS) is an ongoing fungal epizootic caused by epidermal infections of the fungus, <em>Pseudogymnoascus destructans</em> (Pd), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, WNS has spread via clonal reproduction through North-Eastern United States and Canada provinces.</p>
-
-<p>What remains relatively unknown is how much human activity has the potential to influence the spread of WNS. Our influence on the transmission of Pd has never been quantitatively measured at bat hibernacula.</p>
-
-<p>So how can we get our hands on the visitation rates for humans visiting caves in North America and Europe? It’s not like there is a single place where these numbers are recorded. Only caves that serve as tourist destinations might have these numbers, and this represents a very small proportion of the bats impacted by WNS in North America. Since most natural roosts likely exist on private land (not government owned/operated), it seems like this information would be impossible to obtain, right?</p>
-
-<h2 id="applying-novel-data-streams-to-the-problem">Applying Novel Data Streams to the Problem</h2>
-
-<h3 id="novel-data-streams-for-epidemiology">Novel Data Streams for Epidemiology</h3>
-
-<p>This is something that has been applied to epidemiology in the past, in tracking the spread of influenza and other infectious diseases in human populations. The types of data streams that have been used include:</p>
-
-<ul>
-  <li>Web search results
-    <ul>
-      <li>i.e. “Flu symptoms”</li>
-    </ul>
-  </li>
-  <li>Social media data
-    <ul>
-      <li>Twitter hashtags
-        <ul>
-          <li>i.e. “#stayinghome”, “#fluseason”</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p>**What if we could use novel data streams to understand how human activity has the potential to influence the spread of WNS? What sources would have useful information for this purpose?
-**</p>
-
-<h3 id="geocaching">Geocaching</h3>
-
-<p>Consider the activity of “Geocaching”, which, simply put, is kind of a massively social scavenger hunt. There are around 4 million active geocaches worldwide. Many of these users are extremely active, sometimes logging hundreds or thousands of “finds”. Users of <a href="geocaching.com">geocaching.com</a> can search for “caches” hidden by other users, and even hide their own caches for others to find. make posts with clues to Here we use online Geocaching records at sampling sites as a proxy for human activity in these areas.</p>
-
-<p>This is an extremely exciting data source to use for our purpose here, there are several pieces of information tied to each cache:</p>
-
-<ul>
-  <li>All “finds” of a cache are logged
-    <ul>
-      <li>location</li>
-      <li>time</li>
-      <li>user ID</li>
-    </ul>
-  </li>
-  <li>We can link a user’s activity across different sites
-    <ul>
-      <li>allows us to create a network of human traffic between different caves</li>
-    </ul>
-  </li>
-</ul>
-
-<p><strong>These records can be used as a proxy for human activity at natural sites!</strong></p>
-
-<h2 id="challenges">Challenges</h2>
-
-<p>The main challenge here is filtering out the sites that are probably used by roosting bats, and those that are not. Although we pre-selected sites that had the word “cave” or “mine” in the description, the vast majority of these Geocaching sites might not represent true hibernacula for bats.</p>
-
-<h3 id="how-do-we-know-that-the-sites-we-are-sampling-are-reliable">How do we know that the sites we are sampling are reliable?</h3>
-
-<p>Luckily, we can collect additional data on the descriptions of each site by the user, including pictures. We don’t necessary have to do manual confirmation for each site, we developed a filtering strategy based on the presence of key words in these descriptions.</p>
-
-<p>But this information is also fraught with issues – in english, these descriptions tend to use the word “bat” in many different contexts. So we can’t just asssume that the presence of the word “bat” is always used in the context of a site being proper hibernacula for bats. What we can do is determine a combination of keywords that can be used to determine which sites correspond with the right types of habitat for bats. We tested this on a subset of caves which are known to overlap with known bat hibernaculua. A combination of keywords “flashlight”,”cave”,”mine”,”bat”, and “ore” or “mineral” seemed to work best.</p>
-
-<h3 id="multilingual-geocachers">Multilingual Geocachers</h3>
-
-<p>In Europe, there is an additional challenge to filtering: posts are written in a variety of different languages! We translated this keyword set into 8 of the most widely represented languages in Europe to solve this problem.</p>
-
-<h3 id="additional-issues-with-tracking-white-nose-syndrome">Additional Issues with Tracking White-Nose Syndrome</h3>
-
-<p>There a couple of other sicky points that I don’t have time to completely address in this post. But these issues will need to be addressed before publiscation!</p>
-
-<p>A non-exhaustive list:</p>
-
-<ul>
-  <li>What are occupancy rates of bats at these sites?</li>
-  <li>Not all human visits are a potential risk for transmission.</li>
-  <li>What factors impact the spread of the Pd fungal cells between caves?
-    <ul>
-      <li>Incorporating the (viable) spore load, decay of viability with time, etc., for Pd spores</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="some-preliminary-results">Some Preliminary Results</h2>
-
-<h3 id="data-collection">Data Collection</h3>
-
-<p>We were able to scrape a large collection of Geocaching records from <a href="geocaching.com">geocaching.com</a>. We used the <a href="https://www.geocaching.com/developers/documentation/api">Geocaching API</a> to collect this data. To avoid having to scrape all of the sites across North America and Europe, we restricted our search to only the areas where WNS has been recorded in North America and Europe. We also limited our search to sites that had the word “cave” or “mine” in their description.</p>
+        <h2 id="the-main-structure-of-my-thesis">The main structure of my thesis</h2>
 
 <table>
   <thead>
     <tr>
-      <th>Region</th>
-      <th>Number of Sites</th>
-      <th>Number of Unique Users</th>
+      <th>Chapter 1</th>
+      <th>Chapter 2</th>
+      <th>Chapter 3</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>North America</td>
-      <td>1,627</td>
-      <td>12,354</td>
+      <td>Phenotypic diversity of WNS pathogen</td>
+      <td>Landscape genetics and multilocus genotype patterns of the WNS pathogen in North America</td>
+      <td>Structural variants in the WNS pathogen</td>
     </tr>
     <tr>
-      <td>Europe</td>
-      <td> </td>
-      <td>24,123</td>
+      <td><a href="_publications/2018-01-01-aem.md">Paper</a></td>
+      <td><a href="_publications/2021-01-01-pdlandscape.md">Paper</a> <a href="\_posts/WNS Landscape Genomics.md">Post</a></td>
+      <td><em>In prep</em></td>
     </tr>
   </tbody>
 </table>
-
-<p>[[images/na-connectivity.png]]
-[[images/europe-connectivity.png]]</p>
-
-<p>![[images/users_year.gif]]</p>
-
-<h3 id="what-proportion-of-users-visit-caves-in-europe">What proportion of users visit caves in Europe?</h3>
-
-<p>0.4% (~94 users)
-2 individual users logged at European cave
-…before entering a North American cave within 30 days</p>
-
-<p>![[images/europe_users.png]]</p>
-
-<p>Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of WNS, further precautions need to be made to prevent and manage the further spread of WNS.</p>
 
         
       </section>
@@ -430,39 +324,6 @@
       <footer class="page__meta">
         
         
-
-
-  
-
-
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="https://adrianforsythe.github.io/tags/#disease" class="page__taxonomy-item" rel="tag">disease</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://adrianforsythe.github.io/tags/#epidemic" class="page__taxonomy-item" rel="tag">epidemic</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://adrianforsythe.github.io/tags/#phd-research" class="page__taxonomy-item" rel="tag">phd research</a><span class="sep">, </span>
-    
-      
-      
-      <a href="https://adrianforsythe.github.io/tags/#web-scraping" class="page__taxonomy-item" rel="tag">web scraping</a>
-    
-    </span>
-  </p>
 
 
 
@@ -476,11 +337,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://adrianforsythe.github.io/posts/2020/phdthesis" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://adrianforsythe.github.io/posts/2020/phdthesis" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://adrianforsythe.github.io/posts/2020/phdthesis" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -488,10 +349,11 @@
 
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
-    
-    
       <a href="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics" class="pagination--pager" title="WNS Landscape Genomics
+">Previous</a>
+    
+    
+      <a href="https://adrianforsythe.github.io/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" class="pagination--pager" title="
 ">Next</a>
     
   </nav>
@@ -651,7 +513,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics" rel="permalink">WNS Landscape Genomics
+        <a href="https://adrianforsythe.github.io/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="permalink">
 </a>
       
     </h2>
@@ -661,13 +523,11 @@
 
 
   
-	  less than 1 minute read
+	  5 minute read
 	
 </p>
     
 
-        
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-08-01T00:00:00-07:00">August 01, 2020</time></p>
         
 
     
