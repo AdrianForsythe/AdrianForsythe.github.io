@@ -11,29 +11,24 @@ tags:
 
 ## The Problem
 
+<img align="right" style="width:300px;" alt="Image from whitenosesyndrome.org" src="images/wns.jpg">
 White-nose Syndrome (WNS) is an ongoing fungal epizootic caused by epidermal infections of the fungus, _Pseudogymnoascus destructans_ (Pd), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, WNS has spread via clonal reproduction through North-Eastern United States and Canada provinces.
 
+<img align="right" style="width:300px;" alt="WNS Transmission Model" src="images/transmission-model.png">
 What remains relatively unknown is how much human activity has the potential to influence the spread of WNS. Our influence on the transmission of Pd has never been quantitatively measured at bat hibernacula.
 
 So how can we get our hands on the visitation rates for humans visiting caves in North America and Europe? It's not like there is a single place where these numbers are recorded. Only caves that serve as tourist destinations might have these numbers, and this represents a very small proportion of the bats impacted by WNS in North America. Since most natural roosts likely exist on private land (not government owned/operated), it seems like this information would be impossible to obtain, right?
 
-## Applying Novel Data Streams to the Problem
+## The Application of Novel Data Streams to Problems in Disease Ecology
 
-### Novel Data Streams for Epidemiology
+<img align="right" style="width:300px;" alt="Novel data streams in epidemiology" src="images/noveldatastreams.png">
+So called, "Novel Data Streams" are becoming more widely used in epidemiology. In particular, they have recently been applied to tracking the spread of influenza and other infectious diseases in human populations.
 
-This is something that has been applied to epidemiology in the past, in tracking the spread of influenza and other infectious diseases in human populations. The types of data streams that have been used include:
-
-- Web search results
-  - i.e. "Flu symptoms"
-- Social media data
-  - Twitter hashtags
-    - i.e. "#stayinghome", "#fluseason"
-
-**What if we could use novel data streams to understand how human activity has the potential to influence the spread of WNS? What sources would have useful information for this purpose?
-**
+**What if we could use novel data streams to understand how human activity has the potential to influence the spread of WNS? What sources would have useful information for this purpose?**
 
 ### Geocaching
 
+<img align="right" style="width:300px;" alt="geocaching.com" src="images/geocaching.png">
 Consider the activity of "Geocaching", which, simply put, is kind of a massively social scavenger hunt. There are around 4 million active geocaches worldwide. Many of these users are extremely active, sometimes logging hundreds or thousands of "finds". Users of [geocaching.com](geocaching.com) can search for "caches" hidden by other users, and even hide their own caches for others to find. make posts with clues to Here we use online Geocaching records at sampling sites as a proxy for human activity in these areas.
 
 This is an extremely exciting data source to use for our purpose here, there are several pieces of information tied to each cache:
@@ -80,20 +75,18 @@ We were able to scrape a large collection of Geocaching records from [geocaching
 
 | Region        | Number of Sites | Number of Unique Users |
 | ------------- | --------------- | ---------------------- |
-| North America | 1,627           | 12,354                 |
-| Europe        |                 | 24,123                 |
+| North America | 184             | 14 215                 |
+| Europe        | 92              | 12 559                 |
 
-[[images/na-connectivity.png]]
-[[images/europe-connectivity.png]]
+<img align="left" style="width:300px;" alt="Connectivity of sites in North America" src="images/na-connectivity.png">
+<img align="right" style="width:300px;" alt="Connectivity of sites in Europe" src="images/europe-connectivity.png">
 
-![[images/users_year.gif]]
+<img align="center" style="width:300px;" alt="User activity between sites in Europe" src="images/users_year.gif">
 
 ### What proportion of users visit caves in Europe?
 
 0.4% (~94 users)
-2 individual users logged at European cave
-...before entering a North American cave within 30 days
+2 individual users logged at European cave...**before entering a North American cave within 30 days**
 
-![[images/europe_users.png]]
-
+<img align="right" style="width:300px;" alt="European users at caves" src="images/europe_users.png">
 Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of WNS, further precautions need to be made to prevent and manage the further spread of WNS.
