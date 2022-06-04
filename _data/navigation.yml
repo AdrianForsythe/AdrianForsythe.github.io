@@ -10,7 +10,7 @@ main:
     url: /cv/
 
   - title: "PhD Thesis"
-    url: /page-archive/Thesis/
+    url: /posts/2020/09/
 
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Portfolio"
+    url: /page-archive/
