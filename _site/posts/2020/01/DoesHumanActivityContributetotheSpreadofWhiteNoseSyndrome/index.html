@@ -160,10 +160,10 @@
             <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/cv/">CV</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/posts/2020/09/phdthesis.html">PhD Thesis</a></li>
+            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/posts/2020/09/phdthesis/">PhD Thesis</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/year-archive/">Portfolio</a></li>
+            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/year-archive/">Blog Posts</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -296,41 +296,25 @@
       <section class="page__content" itemprop="text">
         <h2 id="the-problem">The Problem</h2>
 
-<p>White-nose Syndrome (WNS) is an ongoing fungal epizootic caused by epidermal infections of the fungus, <em>Pseudogymnoascus destructans</em> (Pd), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, WNS has spread via clonal reproduction through North-Eastern United States and Canada provinces.</p>
+<p><img align="right" style="width:300px;" alt="Image from whitenosesyndrome.org" src="images/wns.jpg" />
+White-nose Syndrome (WNS) is an ongoing fungal epizootic caused by epidermal infections of the fungus, <em>Pseudogymnoascus destructans</em> (Pd), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, WNS has spread via clonal reproduction through North-Eastern United States and Canada provinces.</p>
 
-<p>What remains relatively unknown is how much human activity has the potential to influence the spread of WNS. Our influence on the transmission of Pd has never been quantitatively measured at bat hibernacula.</p>
+<p><img align="right" style="width:300px;" alt="WNS Transmission Model" src="images/transmission-model.png" />
+What remains relatively unknown is how much human activity has the potential to influence the spread of WNS. Our influence on the transmission of Pd has never been quantitatively measured at bat hibernacula.</p>
 
 <p>So how can we get our hands on the visitation rates for humans visiting caves in North America and Europe? It’s not like there is a single place where these numbers are recorded. Only caves that serve as tourist destinations might have these numbers, and this represents a very small proportion of the bats impacted by WNS in North America. Since most natural roosts likely exist on private land (not government owned/operated), it seems like this information would be impossible to obtain, right?</p>
 
-<h2 id="applying-novel-data-streams-to-the-problem">Applying Novel Data Streams to the Problem</h2>
+<h2 id="the-application-of-novel-data-streams-to-problems-in-disease-ecology">The Application of Novel Data Streams to Problems in Disease Ecology</h2>
 
-<h3 id="novel-data-streams-for-epidemiology">Novel Data Streams for Epidemiology</h3>
+<p><img align="right" style="width:300px;" alt="Novel data streams in epidemiology" src="images/noveldatastreams.png" />
+So called, “Novel Data Streams” are becoming more widely used in epidemiology. In particular, they have recently been applied to tracking the spread of influenza and other infectious diseases in human populations.</p>
 
-<p>This is something that has been applied to epidemiology in the past, in tracking the spread of influenza and other infectious diseases in human populations. The types of data streams that have been used include:</p>
-
-<ul>
-  <li>Web search results
-    <ul>
-      <li>i.e. “Flu symptoms”</li>
-    </ul>
-  </li>
-  <li>Social media data
-    <ul>
-      <li>Twitter hashtags
-        <ul>
-          <li>i.e. “#stayinghome”, “#fluseason”</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p>**What if we could use novel data streams to understand how human activity has the potential to influence the spread of WNS? What sources would have useful information for this purpose?
-**</p>
+<p><strong>What if we could use novel data streams to understand how human activity has the potential to influence the spread of WNS? What sources would have useful information for this purpose?</strong></p>
 
 <h3 id="geocaching">Geocaching</h3>
 
-<p>Consider the activity of “Geocaching”, which, simply put, is kind of a massively social scavenger hunt. There are around 4 million active geocaches worldwide. Many of these users are extremely active, sometimes logging hundreds or thousands of “finds”. Users of <a href="geocaching.com">geocaching.com</a> can search for “caches” hidden by other users, and even hide their own caches for others to find. make posts with clues to Here we use online Geocaching records at sampling sites as a proxy for human activity in these areas.</p>
+<p><img align="right" style="width:300px;" alt="geocaching.com" src="images/geocaching.png" />
+Consider the activity of “Geocaching”, which, simply put, is kind of a massively social scavenger hunt. There are around 4 million active geocaches worldwide. Many of these users are extremely active, sometimes logging hundreds or thousands of “finds”. Users of <a href="geocaching.com">geocaching.com</a> can search for “caches” hidden by other users, and even hide their own caches for others to find. make posts with clues to Here we use online Geocaching records at sampling sites as a proxy for human activity in these areas.</p>
 
 <p>This is an extremely exciting data source to use for our purpose here, there are several pieces of information tied to each cache:</p>
 
@@ -398,31 +382,29 @@
   <tbody>
     <tr>
       <td>North America</td>
-      <td>1,627</td>
-      <td>12,354</td>
+      <td>184</td>
+      <td>14 215</td>
     </tr>
     <tr>
       <td>Europe</td>
+      <td>92</td>
       <td> </td>
-      <td>24,123</td>
     </tr>
   </tbody>
 </table>
 
-<p>[[images/na-connectivity.png]]
-[[images/europe-connectivity.png]]</p>
+<p><img align="left" style="width:300px;" alt="Connectivity of sites in North America" src="images/na-connectivity.png" />
+<img align="right" style="width:300px;" alt="Connectivity of sites in Europe" src="images/europe-connectivity.png" /></p>
 
-<p>![[images/users_year.gif]]</p>
+<p><img align="center" style="width:300px;" alt="User activity between sites in Europe" src="images/users_year.gif" /></p>
 
 <h3 id="what-proportion-of-users-visit-caves-in-europe">What proportion of users visit caves in Europe?</h3>
 
 <p>0.4% (~94 users)
-2 individual users logged at European cave
-…before entering a North American cave within 30 days</p>
+2 individual users logged at European cave…<strong>before entering a North American cave within 30 days</strong></p>
 
-<p>![[images/europe_users.png]]</p>
-
-<p>Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of WNS, further precautions need to be made to prevent and manage the further spread of WNS.</p>
+<p><img align="right" style="width:300px;" alt="European users at caves" src="images/europe_users.png" />
+Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of WNS, further precautions need to be made to prevent and manage the further spread of WNS.</p>
 
         
       </section>
@@ -671,7 +653,9 @@
         
 
     
-    <p class="archive__item-excerpt" itemprop="description">
+    <p class="archive__item-excerpt" itemprop="description"><p><img align="left" style="width:300px;" alt="BioClim Variable Rasters" src="images/raster_pca_map.png" />
+<img align="right" style="width:300px;" alt="Road Connectivity" src="images/major_roads.png" />
+<img align="center" style="width:300px;" alt="Landscape Surface Plots" src="images/landscape-surface-plots.png" /></p>
 </p>
     
     
