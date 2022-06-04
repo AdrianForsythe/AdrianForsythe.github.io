@@ -19,7 +19,7 @@
 
 
 
-<title>PhD Thesis - Adrian Forsythe</title>
+<title>How to automate processing of sanger sequencing data in R - Adrian Forsythe</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-CA">
 <meta property="og:site_name" content="Adrian Forsythe">
-<meta property="og:title" content="PhD Thesis">
+<meta property="og:title" content="How to automate processing of sanger sequencing data in R">
 
 
-  <link rel="canonical" href="https://adrianforsythe.github.io/posts/2020/phdthesis">
-  <meta property="og:url" content="https://adrianforsythe.github.io/posts/2020/phdthesis">
+  <link rel="canonical" href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/">
+  <meta property="og:url" content="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/">
 
 
 
-  <meta property="og:description" content="Short description of my PhD Thesis">
+  <meta property="og:description" content="  adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2020-08-31T00:00:00-07:00">
+  <meta property="article:published_time" content="2022-05-21T00:00:00-07:00">
 
 
 
@@ -160,10 +160,10 @@
             <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/cv/">CV</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/posts/2020/09/">PhD Thesis</a></li>
+            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/posts/2020/09/phdthesis.html">PhD Thesis</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/page-archive/">Portfolio</a></li>
+            <li class="masthead__menu-item"><a href="https://adrianforsythe.github.io/year-archive/">Portfolio</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -262,29 +262,29 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="PhD Thesis">
-    <meta itemprop="description" content="Short description of my PhD Thesis">
-    <meta itemprop="datePublished" content="August 31, 2020">
+    <meta itemprop="headline" content="How to automate processing of sanger sequencing data in R">
+    <meta itemprop="description" content="  adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR">
+    <meta itemprop="datePublished" content="May 21, 2022">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">PhD Thesis
+          <h1 class="page__title" itemprop="headline">How to automate processing of sanger sequencing data in R
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
 
 
   
-	  less than 1 minute read
+	  1 minute read
 	
 </p>
           
         
         
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-08-31T00:00:00-07:00">August 31, 2020</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-05-21T00:00:00-07:00">May 21, 2022</time></p>
         
         
              
@@ -294,29 +294,133 @@
       
 
       <section class="page__content" itemprop="text">
-        <h2 id="the-main-structure-of-my-thesis">The main structure of my thesis</h2>
+        <ul>
+  <li>adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR</li>
+</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Chapter 1</th>
-      <th>Chapter 2</th>
-      <th>Chapter 3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Phenotypic diversity of WNS pathogen</td>
-      <td>Landscape genetics and multilocus genotype patterns of the WNS pathogen in North America</td>
-      <td>Structural variants in the WNS pathogen</td>
-    </tr>
-    <tr>
-      <td><a href="_publications/2018-01-01-aem.md">Paper</a></td>
-      <td><a href="_publications/2021-01-01-pdlandscape.md">Paper</a> <a href="\_posts/WNS Landscape Genomics.md">Post</a></td>
-      <td><em>In prep</em></td>
-    </tr>
-  </tbody>
-</table>
+<p>```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+```{r echo=FALSE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+# LIBS ----
+library(sangeranalyseR)
+# requires that blast is installed on your system
+library(rBLAST)
+library(rentrez)
+library(DECIPHER)
+</code></pre></div></div>
+
+<p>```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+source(‘~/PhD/Anti-Pd/inhibition/SangerAnalysis/consensus/stubs.R’)</p>
+<h1 id="setwdinhibitionsangeranalysistr_sequencingresultsfull_inhibitorsround2">setwd(“inhibition/SangerAnalysis/TR_sequencingresults/full_inhibitors/round2”)</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- Set variables for input folders
+- PARSE FOLDERS and list all .AB1 files
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+fwd_fldr &lt;- 'sanger_data/forward'
+rev_fldr &lt;- 'sanger_data/reverse'
+
+fwd_files &lt;- list.files(path = fwd_fldr, pattern = '.AB1')
+rev_files &lt;- list.files(path = rev_fldr, pattern = '.AB1')
+</code></pre></div></div>
+
+<ul>
+  <li>name the vectors by the IDs</li>
+  <li>format of files names may be different</li>
+</ul>
+
+<p>```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+names(fwd_files) &lt;-
+  gsub(pattern = “.<em>_“,replacement=””,
+  gsub(pattern = “-(.</em>)”,replacement=”“,fwd_files)
+  )
+names(rev_files) &lt;-
+  gsub(pattern = “.<em>_“,replacement=””,
+       gsub(pattern = “-(.</em>)”,replacement=”“,rev_files)
+       )</p>
+
+<p>if (!all(names(rev_files) %in% names(fwd_files)) &amp;
+    !all(names(fwd_files) %in% names(rev_files))) {
+  warning(‘Not all names are shared between fwd and rev’)
+}</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- blast db
+- download from: https://www.arb-silva.de/no_cache/download/archive/current/Exports/
+- make sure to index the fasta file first
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+makeblastdb(file="blast/SILVA_138.1_SSURef_NR99_tax_silva.fasta",dbtype = "nucl")
+bl &lt;- blast(db = "blast/SILVA_138.1_SSURef_NR99_tax_silva.fasta",type = "blastn")
+</code></pre></div></div>
+
+<h1 id="loop--">LOOP —-</h1>
+
+<p>```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+conseqs &lt;- vector(mode = ‘list’, length = length(rev_files))
+names(conseqs) &lt;- names(rev_files)</p>
+
+<p>blast_results &lt;- vector(mode = ‘list’, length = length(rev_files))
+names(blast_results) &lt;- names(rev_files)</p>
+
+<p>for (nm in names(rev_files)[1]) {
+  cat(‘…. working on [’, nm, ‘]\n’, sep = ‘’)
+  fwd_file &lt;- fwd_files[[nm]]
+  rev_file &lt;- rev_files[[nm]]
+  fwd &lt;- readsangerseq(filename = file.path(fwd_fldr, fwd_file))
+  rev &lt;- readsangerseq(filename = file.path(rev_fldr, rev_file))
+  fwd_edit&lt;-makeBaseCalls(fwd)
+  fwd_edit &lt;- primarySeq(fwd_edit)</p>
+
+<p>rev_edit&lt;-makeBaseCalls(rev)
+  rev_edit &lt;- primarySeq(rev_edit)</p>
+
+<p># get reverse complement
+  rev_edit &lt;- reverseComplement(rev_edit)</p>
+
+<p># get unaligned set of the reads we wish to merge
+  reads &lt;- DNAStringSet(c(as.character(fwd_edit), as.character(rev_edit)))
+  names(reads) &lt;- c(‘fwd’, ‘rev’)</p>
+
+<p># merge F and R reads
+  merged_reads &lt;- merge.reads(reads)</p>
+
+<p>spliced_reads&lt;-DNAString(c(merged_reads$alignment$fwd[1:round(length(merged_reads$consensus)/2)],
+  merged_reads$alignment$rev[(round(length(merged_reads$consensus)/2)+1):length(merged_reads$consensus)]))</p>
+
+<p># add to store
+  # conseqs[[nm]] &lt;- merged_reads[[‘consensus’]]
+  # conseqs[[nm]] &lt;- merged_reads[[‘alignment’]]
+  conseqs[[nm]] &lt;- spliced_reads</p>
+
+<p># run BLAST
+  nuc_blast &lt;- predict(bl, DNAStringSet(conseqs[nm]),)[1,]
+  esum&lt;-entrez_summary(db = “nuccore”,id = gsub(pattern = “\.[^.]*$”,replacement=”“,x=as.character(nuc_blast$SubjectID)))
+  nuc_blast$species&lt;-esum$organism
+  blast_results[[nm]] &lt;- nuc_blast
+}</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# BLAST results
+
+```{r}
+blast_results
+</code></pre></div></div>
+
+<h1 id="make-string-set">make string set</h1>
+
+<p>```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+conseqs &lt;- Filter(length, conseqs)
+print(conseqs)</p>
+
+<h1 id="if-you-want-to-remove-gaps">if you want to remove gaps</h1>
+<h1 id="conseqs---removegapsdnastringsetconseqs">conseqs &lt;- RemoveGaps(DNAStringSet(conseqs))</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- write results to file
+
+```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+write.csv(do.call(rbind,blast_results),"results/full_inhibitors.csv")
+writeXStringSet(x = DNAStringSet(conseqs), filepath = 'results/consensus.fa')
+</code></pre></div></div>
 
         
       </section>
@@ -337,11 +441,11 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=https://adrianforsythe.github.io/posts/2020/phdthesis" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://adrianforsythe.github.io/posts/2020/phdthesis" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://adrianforsythe.github.io/posts/2020/phdthesis" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
       
@@ -349,12 +453,11 @@
 
   <nav class="pagination">
     
-      <a href="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics" class="pagination--pager" title="WNS Landscape Genomics
+      <a href="https://adrianforsythe.github.io/posts/2021/01/isosources/" class="pagination--pager" title="How to collect information on the isolation sources of a collection of different types of bacteria?
 ">Previous</a>
     
     
-      <a href="https://adrianforsythe.github.io/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" class="pagination--pager" title="
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -383,52 +486,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo" rel="permalink">How to automate processing of sanger sequencing data in R
-</a>
-      
-    </h2>
-    
-    
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
-
-
-  
-	  2 minute read
-	
-</p>
-    
-
-        
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-05-21T00:00:00-07:00">May 21, 2022</time></p>
-        
-
-    
-    <p class="archive__item-excerpt" itemprop="description"><ul>
-  <li>adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR</li>
-</ul>
-
-</p>
-    
-    
-    
-
-  </article>
-</div>
-
-        
-          
-
-
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://adrianforsythe.github.io/posts/2021/01/isosources" rel="permalink">How to collect information on the isolation sources of a collection of different types of bacteria?
+        <a href="https://adrianforsythe.github.io/posts/2021/01/isosources/" rel="permalink">How to collect information on the isolation sources of a collection of different types of bacteria?
 </a>
       
     </h2>
@@ -471,7 +529,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://adrianforsythe.github.io/posts/2020/09/phdthesis" rel="permalink">PhD Thesis
+        <a href="https://adrianforsythe.github.io/posts/2020/09/phdthesis/" rel="permalink">PhD Thesis
 </a>
       
     </h2>
@@ -513,7 +571,49 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://adrianforsythe.github.io/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="permalink">
+        <a href="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics/" rel="permalink">WNS Landscape Genomics
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-08-01T00:00:00-07:00">August 01, 2020</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="permalink">Does Human Activity Contribute to the Spread of White-Nose Syndrome?
 </a>
       
     </h2>
@@ -529,9 +629,12 @@
     
 
         
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2020-01-01T00:00:00-08:00">January 01, 2020</time></p>
+        
 
     
-    <p class="archive__item-excerpt" itemprop="description">
+    <p class="archive__item-excerpt" itemprop="description"><h2 id="the-problem">The Problem</h2>
+
 </p>
     
     

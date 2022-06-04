@@ -1,7 +1,7 @@
 ---
 title: "How to collect information on the isolation sources of a collection of different types of bacteria?"
 date: 2021-01-01
-permalink: /posts/2021/01/isosources
+permalink: /posts/2021/01/isosources/
 tags:
   - big data
   - metagenomics

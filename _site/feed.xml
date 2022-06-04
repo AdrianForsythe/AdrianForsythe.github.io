@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://adrianforsythe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adrianforsythe.github.io/" rel="alternate" type="text/html" /><updated>2022-06-04T04:56:09-07:00</updated><id>https://adrianforsythe.github.io/feed.xml</id><title type="html">Adrian Forsythe</title><subtitle>Academic CV</subtitle><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><entry><title type="html">How to automate processing of sanger sequencing data in R</title><link href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo" rel="alternate" type="text/html" title="How to automate processing of sanger sequencing data in R" /><published>2022-05-21T00:00:00-07:00</published><updated>2022-05-21T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo">- adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://adrianforsythe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adrianforsythe.github.io/" rel="alternate" type="text/html" /><updated>2022-06-04T05:55:13-07:00</updated><id>https://adrianforsythe.github.io/feed.xml</id><title type="html">Adrian Forsythe</title><subtitle>Academic CV</subtitle><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><entry><title type="html">How to automate processing of sanger sequencing data in R</title><link href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/" rel="alternate" type="text/html" title="How to automate processing of sanger sequencing data in R" /><published>2022-05-21T00:00:00-07:00</published><updated>2022-05-21T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/">&lt;ul&gt;
+  &lt;li&gt;adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR&lt;/li&gt;
+&lt;/ul&gt;
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
+&lt;p&gt;```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 ```{r echo=FALSE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
 # LIBS ----
 library(sangeranalyseR)
@@ -11,126 +12,124 @@ library(sangeranalyseR)
 library(rBLAST)
 library(rentrez)
 library(DECIPHER)
-```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
-source('~/PhD/Anti-Pd/inhibition/SangerAnalysis/consensus/stubs.R')
-# setwd(&quot;inhibition/SangerAnalysis/TR_sequencingresults/full_inhibitors/round2&quot;)
-```
-
+&lt;p&gt;```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+source(‘~/PhD/Anti-Pd/inhibition/SangerAnalysis/consensus/stubs.R’)&lt;/p&gt;
+&lt;h1 id=&quot;setwdinhibitionsangeranalysistr_sequencingresultsfull_inhibitorsround2&quot;&gt;setwd(“inhibition/SangerAnalysis/TR_sequencingresults/full_inhibitors/round2”)&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 - Set variables for input folders
 - PARSE FOLDERS and list all .AB1 files
 
 ```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
-fwd_fldr &lt;- 'sanger_data/forward'
-rev_fldr &lt;- 'sanger_data/reverse'
+fwd_fldr &amp;lt;- 'sanger_data/forward'
+rev_fldr &amp;lt;- 'sanger_data/reverse'
 
-fwd_files &lt;- list.files(path = fwd_fldr, pattern = '.AB1')
-rev_files &lt;- list.files(path = rev_fldr, pattern = '.AB1')
-```
+fwd_files &amp;lt;- list.files(path = fwd_fldr, pattern = '.AB1')
+rev_files &amp;lt;- list.files(path = rev_fldr, pattern = '.AB1')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-- name the vectors by the IDs
-- format of files names may be different
+&lt;ul&gt;
+  &lt;li&gt;name the vectors by the IDs&lt;/li&gt;
+  &lt;li&gt;format of files names may be different&lt;/li&gt;
+&lt;/ul&gt;
 
-```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
-names(fwd_files) &lt;-
-  gsub(pattern = &quot;.*_&quot;,replacement=&quot;&quot;,
-  gsub(pattern = &quot;-(.*)&quot;,replacement=&quot;&quot;,fwd_files)
+&lt;p&gt;```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+names(fwd_files) &amp;lt;-
+  gsub(pattern = “.&lt;em&gt;_“,replacement=””,
+  gsub(pattern = “-(.&lt;/em&gt;)”,replacement=”“,fwd_files)
   )
-names(rev_files) &lt;-
-  gsub(pattern = &quot;.*_&quot;,replacement=&quot;&quot;,
-       gsub(pattern = &quot;-(.*)&quot;,replacement=&quot;&quot;,rev_files)
-       )
+names(rev_files) &amp;lt;-
+  gsub(pattern = “.&lt;em&gt;_“,replacement=””,
+       gsub(pattern = “-(.&lt;/em&gt;)”,replacement=”“,rev_files)
+       )&lt;/p&gt;
 
-if (!all(names(rev_files) %in% names(fwd_files)) &amp;
+&lt;p&gt;if (!all(names(rev_files) %in% names(fwd_files)) &amp;amp;
     !all(names(fwd_files) %in% names(rev_files))) {
-  warning('Not all names are shared between fwd and rev')
-}
-```
-
+  warning(‘Not all names are shared between fwd and rev’)
+}&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 - blast db
 - download from: https://www.arb-silva.de/no_cache/download/archive/current/Exports/
 - make sure to index the fasta file first
 
 ```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
 makeblastdb(file=&quot;blast/SILVA_138.1_SSURef_NR99_tax_silva.fasta&quot;,dbtype = &quot;nucl&quot;)
-bl &lt;- blast(db = &quot;blast/SILVA_138.1_SSURef_NR99_tax_silva.fasta&quot;,type = &quot;blastn&quot;)
-```
+bl &amp;lt;- blast(db = &quot;blast/SILVA_138.1_SSURef_NR99_tax_silva.fasta&quot;,type = &quot;blastn&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-# LOOP ----
+&lt;h1 id=&quot;loop--&quot;&gt;LOOP —-&lt;/h1&gt;
 
-```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
-conseqs &lt;- vector(mode = 'list', length = length(rev_files))
-names(conseqs) &lt;- names(rev_files)
+&lt;p&gt;```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+conseqs &amp;lt;- vector(mode = ‘list’, length = length(rev_files))
+names(conseqs) &amp;lt;- names(rev_files)&lt;/p&gt;
 
-blast_results &lt;- vector(mode = 'list', length = length(rev_files))
-names(blast_results) &lt;- names(rev_files)
+&lt;p&gt;blast_results &amp;lt;- vector(mode = ‘list’, length = length(rev_files))
+names(blast_results) &amp;lt;- names(rev_files)&lt;/p&gt;
 
-for (nm in names(rev_files)[1]) {
-  cat('.... working on [', nm, ']\n', sep = '')
-  fwd_file &lt;- fwd_files[[nm]]
-  rev_file &lt;- rev_files[[nm]]
-  fwd &lt;- readsangerseq(filename = file.path(fwd_fldr, fwd_file))
-  rev &lt;- readsangerseq(filename = file.path(rev_fldr, rev_file))
-  fwd_edit&lt;-makeBaseCalls(fwd)
-  fwd_edit &lt;- primarySeq(fwd_edit)
+&lt;p&gt;for (nm in names(rev_files)[1]) {
+  cat(‘…. working on [’, nm, ‘]\n’, sep = ‘’)
+  fwd_file &amp;lt;- fwd_files[[nm]]
+  rev_file &amp;lt;- rev_files[[nm]]
+  fwd &amp;lt;- readsangerseq(filename = file.path(fwd_fldr, fwd_file))
+  rev &amp;lt;- readsangerseq(filename = file.path(rev_fldr, rev_file))
+  fwd_edit&amp;lt;-makeBaseCalls(fwd)
+  fwd_edit &amp;lt;- primarySeq(fwd_edit)&lt;/p&gt;
 
-  rev_edit&lt;-makeBaseCalls(rev)
-  rev_edit &lt;- primarySeq(rev_edit)
+&lt;p&gt;rev_edit&amp;lt;-makeBaseCalls(rev)
+  rev_edit &amp;lt;- primarySeq(rev_edit)&lt;/p&gt;
 
-  # get reverse complement
-  rev_edit &lt;- reverseComplement(rev_edit)
+&lt;p&gt;# get reverse complement
+  rev_edit &amp;lt;- reverseComplement(rev_edit)&lt;/p&gt;
 
-  # get unaligned set of the reads we wish to merge
-  reads &lt;- DNAStringSet(c(as.character(fwd_edit), as.character(rev_edit)))
-  names(reads) &lt;- c('fwd', 'rev')
+&lt;p&gt;# get unaligned set of the reads we wish to merge
+  reads &amp;lt;- DNAStringSet(c(as.character(fwd_edit), as.character(rev_edit)))
+  names(reads) &amp;lt;- c(‘fwd’, ‘rev’)&lt;/p&gt;
 
-  # merge F and R reads
-  merged_reads &lt;- merge.reads(reads)
+&lt;p&gt;# merge F and R reads
+  merged_reads &amp;lt;- merge.reads(reads)&lt;/p&gt;
 
-  spliced_reads&lt;-DNAString(c(merged_reads$alignment$fwd[1:round(length(merged_reads$consensus)/2)],
-  merged_reads$alignment$rev[(round(length(merged_reads$consensus)/2)+1):length(merged_reads$consensus)]))
+&lt;p&gt;spliced_reads&amp;lt;-DNAString(c(merged_reads$alignment$fwd[1:round(length(merged_reads$consensus)/2)],
+  merged_reads$alignment$rev[(round(length(merged_reads$consensus)/2)+1):length(merged_reads$consensus)]))&lt;/p&gt;
 
-  # add to store
-  # conseqs[[nm]] &lt;- merged_reads[['consensus']]
-  # conseqs[[nm]] &lt;- merged_reads[['alignment']]
-  conseqs[[nm]] &lt;- spliced_reads
+&lt;p&gt;# add to store
+  # conseqs[[nm]] &amp;lt;- merged_reads[[‘consensus’]]
+  # conseqs[[nm]] &amp;lt;- merged_reads[[‘alignment’]]
+  conseqs[[nm]] &amp;lt;- spliced_reads&lt;/p&gt;
 
-  # run BLAST
-  nuc_blast &lt;- predict(bl, DNAStringSet(conseqs[nm]),)[1,]
-  esum&lt;-entrez_summary(db = &quot;nuccore&quot;,id = gsub(pattern = &quot;\\.[^.]*$&quot;,replacement=&quot;&quot;,x=as.character(nuc_blast$SubjectID)))
-  nuc_blast$species&lt;-esum$organism
-  blast_results[[nm]] &lt;- nuc_blast
-}
-```
-
+&lt;p&gt;# run BLAST
+  nuc_blast &amp;lt;- predict(bl, DNAStringSet(conseqs[nm]),)[1,]
+  esum&amp;lt;-entrez_summary(db = “nuccore”,id = gsub(pattern = “\.[^.]*$”,replacement=”“,x=as.character(nuc_blast$SubjectID)))
+  nuc_blast$species&amp;lt;-esum$organism
+  blast_results[[nm]] &amp;lt;- nuc_blast
+}&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 # BLAST results
 
 ```{r}
 blast_results
-```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-# make string set
+&lt;h1 id=&quot;make-string-set&quot;&gt;make string set&lt;/h1&gt;
 
-```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
-conseqs &lt;- Filter(length, conseqs)
-print(conseqs)
+&lt;p&gt;```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
+conseqs &amp;lt;- Filter(length, conseqs)
+print(conseqs)&lt;/p&gt;
 
-# if you want to remove gaps
-# conseqs &lt;- RemoveGaps(DNAStringSet(conseqs))
-```
-
+&lt;h1 id=&quot;if-you-want-to-remove-gaps&quot;&gt;if you want to remove gaps&lt;/h1&gt;
+&lt;h1 id=&quot;conseqs---removegapsdnastringsetconseqs&quot;&gt;conseqs &amp;lt;- RemoveGaps(DNAStringSet(conseqs))&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 - write results to file
 
 ```{r echo=TRUE, eval=TRUE, warning=FALSE,message=FALSE,error=FALSE}
 write.csv(do.call(rbind,blast_results),&quot;results/full_inhibitors.csv&quot;)
 writeXStringSet(x = DNAStringSet(conseqs), filepath = 'results/consensus.fa')
-```</content><author><name>Adrian Forsythe</name></author><summary type="html">- adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR</summary></entry><entry><title type="html">How to collect information on the isolation sources of a collection of different types of bacteria?</title><link href="https://adrianforsythe.github.io/posts/2021/01/isosources" rel="alternate" type="text/html" title="How to collect information on the isolation sources of a collection of different types of bacteria?" /><published>2021-01-01T00:00:00-08:00</published><updated>2021-01-01T00:00:00-08:00</updated><id>https://adrianforsythe.github.io/posts/2021/01/isosources</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2021/01/isosources">&lt;h1 id=&quot;how-to-get-basic-isolation-source-information-from-ncbi-assembly-accession&quot;&gt;How to get basic isolation source information from ncbi assembly accession&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Adrian Forsythe</name></author><summary type="html">adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR</summary></entry><entry><title type="html">How to collect information on the isolation sources of a collection of different types of bacteria?</title><link href="https://adrianforsythe.github.io/posts/2021/01/isosources/" rel="alternate" type="text/html" title="How to collect information on the isolation sources of a collection of different types of bacteria?" /><published>2021-01-01T00:00:00-08:00</published><updated>2021-01-01T00:00:00-08:00</updated><id>https://adrianforsythe.github.io/posts/2021/01/isosources</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2021/01/isosources/">&lt;h1 id=&quot;how-to-get-basic-isolation-source-information-from-ncbi-assembly-accession&quot;&gt;How to get basic isolation source information from ncbi assembly accession&lt;/h1&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;esearch &lt;span class=&quot;nt&quot;&gt;-query&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;accession] &lt;span class=&quot;nt&quot;&gt;-db&lt;/span&gt; assembly | elink &lt;span class=&quot;nt&quot;&gt;-target&lt;/span&gt; biosample | esummary | xtract &lt;span class=&quot;nt&quot;&gt;-pattern&lt;/span&gt; DocumentSummary &lt;span class=&quot;nt&quot;&gt;-first&lt;/span&gt; Title &lt;span class=&quot;nt&quot;&gt;-element&lt;/span&gt; Accession &lt;span class=&quot;nt&quot;&gt;-group&lt;/span&gt; Attribute &lt;span class=&quot;nt&quot;&gt;-if&lt;/span&gt; Attribute@harmonized_name &lt;span class=&quot;nt&quot;&gt;-equals&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;isolation_source&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-element&lt;/span&gt; Attribute
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You can call this from an Rscript using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;system()&lt;/code&gt;&lt;/p&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><category term="big data" /><category term="metagenomics" /><category term="isolation sources" /><summary type="html">How to get basic isolation source information from ncbi assembly accession</summary></entry><entry><title type="html">PhD Thesis</title><link href="https://adrianforsythe.github.io/posts/2020/09/phdthesis" rel="alternate" type="text/html" title="PhD Thesis" /><published>2020-09-01T00:00:00-07:00</published><updated>2020-09-01T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2020/09/phdthesis</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2020/09/phdthesis">&lt;h1 id=&quot;population-genetic-investigation-of-the-white-nose-syndrome-pathogenpseudogymonascus-destructans-in-north-america&quot;&gt;Population Genetic Investigation of the White-Nose Syndrome Pathogen,&lt;em&gt;Pseudogymonascus destructans&lt;/em&gt;, in North America&lt;/h1&gt;
+&lt;p&gt;You can call this from an Rscript using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;system()&lt;/code&gt;&lt;/p&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><category term="big data" /><category term="metagenomics" /><category term="isolation sources" /><summary type="html">How to get basic isolation source information from ncbi assembly accession</summary></entry><entry><title type="html">PhD Thesis</title><link href="https://adrianforsythe.github.io/posts/2020/09/phdthesis/" rel="alternate" type="text/html" title="PhD Thesis" /><published>2020-09-01T00:00:00-07:00</published><updated>2020-09-01T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2020/09/phdthesis</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2020/09/phdthesis/">&lt;h1 id=&quot;population-genetic-investigation-of-the-white-nose-syndrome-pathogenpseudogymonascus-destructans-in-north-america&quot;&gt;Population Genetic Investigation of the White-Nose Syndrome Pathogen,&lt;em&gt;Pseudogymonascus destructans&lt;/em&gt;, in North America&lt;/h1&gt;
 
 &lt;h2 id=&quot;the-main-structure-of-my-thesis&quot;&gt;The main structure of my thesis&lt;/h2&gt;
 
@@ -154,29 +153,7 @@ writeXStringSet(x = DNAStringSet(conseqs), filepath = 'results/consensus.fa')
       &lt;td&gt;&lt;em&gt;In prep&lt;/em&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><category term="phd research" /><category term="epidemic" /><category term="disease" /><summary type="html">Short description of my PhD Thesis</summary></entry><entry><title type="html">PhD Thesis</title><link href="https://adrianforsythe.github.io/posts/2020/phdthesis" rel="alternate" type="text/html" title="PhD Thesis" /><published>2020-08-31T00:00:00-07:00</published><updated>2020-08-31T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2020/phdthesis</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2020/phdthesis">&lt;h2 id=&quot;the-main-structure-of-my-thesis&quot;&gt;The main structure of my thesis&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Chapter 1&lt;/th&gt;
-      &lt;th&gt;Chapter 2&lt;/th&gt;
-      &lt;th&gt;Chapter 3&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Phenotypic diversity of WNS pathogen&lt;/td&gt;
-      &lt;td&gt;Landscape genetics and multilocus genotype patterns of the WNS pathogen in North America&lt;/td&gt;
-      &lt;td&gt;Structural variants in the WNS pathogen&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;_publications/2018-01-01-aem.md&quot;&gt;Paper&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;_publications/2021-01-01-pdlandscape.md&quot;&gt;Paper&lt;/a&gt; &lt;a href=&quot;\_posts/WNS Landscape Genomics.md&quot;&gt;Post&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;em&gt;In prep&lt;/em&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><summary type="html">Short description of my PhD Thesis</summary></entry><entry><title type="html">WNS Landscape Genomics</title><link href="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics" rel="alternate" type="text/html" title="WNS Landscape Genomics" /><published>2020-08-01T00:00:00-07:00</published><updated>2020-08-01T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics"></content><author><name>Adrian Forsythe</name></author><summary type="html"></summary></entry><entry><title type="html"></title><link href="https://adrianforsythe.github.io/2020-01-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="alternate" type="text/html" title="" /><published></published><updated></updated><id>https://adrianforsythe.github.io/2020-01-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome</id><content type="html" xml:base="https://adrianforsythe.github.io/2020-01-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/">&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+&lt;/table&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><category term="phd research" /><category term="epidemic" /><category term="disease" /><summary type="html">Short description of my PhD Thesis</summary></entry><entry><title type="html">WNS Landscape Genomics</title><link href="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics/" rel="alternate" type="text/html" title="WNS Landscape Genomics" /><published>2020-08-01T00:00:00-07:00</published><updated>2020-08-01T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2020/08/WNSLandscapeGenomics/"></content><author><name>Adrian Forsythe</name></author><summary type="html"></summary></entry><entry><title type="html">Does Human Activity Contribute to the Spread of White-Nose Syndrome?</title><link href="https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="alternate" type="text/html" title="Does Human Activity Contribute to the Spread of White-Nose Syndrome?" /><published>2020-01-01T00:00:00-08:00</published><updated>2020-01-01T00:00:00-08:00</updated><id>https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/">&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
 
 &lt;p&gt;White-nose Syndrome (WNS) is an ongoing fungal epizootic caused by epidermal infections of the fungus, &lt;em&gt;Pseudogymnoascus destructans&lt;/em&gt; (Pd), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, WNS has spread via clonal reproduction through North-Eastern United States and Canada provinces.&lt;/p&gt;
 
@@ -304,132 +281,4 @@ writeXStringSet(x = DNAStringSet(conseqs), filepath = 'results/consensus.fa')
 
 &lt;p&gt;![[images/europe_users.png]]&lt;/p&gt;
 
-&lt;p&gt;Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of WNS, further precautions need to be made to prevent and manage the further spread of WNS.&lt;/p&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author></entry><entry><title type="html"></title><link href="https://adrianforsythe.github.io/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="alternate" type="text/html" title="" /><published></published><updated></updated><id>https://adrianforsythe.github.io/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome</id><content type="html" xml:base="https://adrianforsythe.github.io/2020-09-01-DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/">&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
-
-&lt;p&gt;White-nose Syndrome (WNS) is an ongoing fungal epizootic caused by epidermal infections of the fungus, &lt;em&gt;Pseudogymnoascus destructans&lt;/em&gt; (Pd), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, WNS has spread via clonal reproduction through North-Eastern United States and Canada provinces.&lt;/p&gt;
-
-&lt;p&gt;What remains relatively unknown is how much human activity has the potential to influence the spread of WNS. Our influence on the transmission of Pd has never been quantitatively measured at bat hibernacula.&lt;/p&gt;
-
-&lt;p&gt;So how can we get our hands on the visitation rates for humans visiting caves in North America and Europe? It’s not like there is a single place where these numbers are recorded. Only caves that serve as tourist destinations might have these numbers, and this represents a very small proportion of the bats impacted by WNS in North America. Since most natural roosts likely exist on private land (not government owned/operated), it seems like this information would be impossible to obtain, right?&lt;/p&gt;
-
-&lt;h2 id=&quot;applying-novel-data-streams-to-the-problem&quot;&gt;Applying Novel Data Streams to the Problem&lt;/h2&gt;
-
-&lt;h3 id=&quot;novel-data-streams-for-epidemiology&quot;&gt;Novel Data Streams for Epidemiology&lt;/h3&gt;
-
-&lt;p&gt;This is something that has been applied to epidemiology in the past, in tracking the spread of influenza and other infectious diseases in human populations. The types of data streams that have been used include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Web search results
-    &lt;ul&gt;
-      &lt;li&gt;i.e. “Flu symptoms”&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Social media data
-    &lt;ul&gt;
-      &lt;li&gt;Twitter hashtags
-        &lt;ul&gt;
-          &lt;li&gt;i.e. “#stayinghome”, “#fluseason”&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;**What if we could use novel data streams to understand how human activity has the potential to influence the spread of WNS? What sources would have useful information for this purpose?
-**&lt;/p&gt;
-
-&lt;h3 id=&quot;geocaching&quot;&gt;Geocaching&lt;/h3&gt;
-
-&lt;p&gt;Consider the activity of “Geocaching”, which, simply put, is kind of a massively social scavenger hunt. There are around 4 million active geocaches worldwide. Many of these users are extremely active, sometimes logging hundreds or thousands of “finds”. Users of &lt;a href=&quot;geocaching.com&quot;&gt;geocaching.com&lt;/a&gt; can search for “caches” hidden by other users, and even hide their own caches for others to find. make posts with clues to Here we use online Geocaching records at sampling sites as a proxy for human activity in these areas.&lt;/p&gt;
-
-&lt;p&gt;This is an extremely exciting data source to use for our purpose here, there are several pieces of information tied to each cache:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;All “finds” of a cache are logged
-    &lt;ul&gt;
-      &lt;li&gt;location&lt;/li&gt;
-      &lt;li&gt;time&lt;/li&gt;
-      &lt;li&gt;user ID&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;We can link a user’s activity across different sites
-    &lt;ul&gt;
-      &lt;li&gt;allows us to create a network of human traffic between different caves&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;These records can be used as a proxy for human activity at natural sites!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;challenges&quot;&gt;Challenges&lt;/h2&gt;
-
-&lt;p&gt;The main challenge here is filtering out the sites that are probably used by roosting bats, and those that are not. Although we pre-selected sites that had the word “cave” or “mine” in the description, the vast majority of these Geocaching sites might not represent true hibernacula for bats.&lt;/p&gt;
-
-&lt;h3 id=&quot;how-do-we-know-that-the-sites-we-are-sampling-are-reliable&quot;&gt;How do we know that the sites we are sampling are reliable?&lt;/h3&gt;
-
-&lt;p&gt;Luckily, we can collect additional data on the descriptions of each site by the user, including pictures. We don’t necessary have to do manual confirmation for each site, we developed a filtering strategy based on the presence of key words in these descriptions.&lt;/p&gt;
-
-&lt;p&gt;But this information is also fraught with issues – in english, these descriptions tend to use the word “bat” in many different contexts. So we can’t just asssume that the presence of the word “bat” is always used in the context of a site being proper hibernacula for bats. What we can do is determine a combination of keywords that can be used to determine which sites correspond with the right types of habitat for bats. We tested this on a subset of caves which are known to overlap with known bat hibernaculua. A combination of keywords “flashlight”,”cave”,”mine”,”bat”, and “ore” or “mineral” seemed to work best.&lt;/p&gt;
-
-&lt;h3 id=&quot;multilingual-geocachers&quot;&gt;Multilingual Geocachers&lt;/h3&gt;
-
-&lt;p&gt;In Europe, there is an additional challenge to filtering: posts are written in a variety of different languages! We translated this keyword set into 8 of the most widely represented languages in Europe to solve this problem.&lt;/p&gt;
-
-&lt;h3 id=&quot;additional-issues-with-tracking-white-nose-syndrome&quot;&gt;Additional Issues with Tracking White-Nose Syndrome&lt;/h3&gt;
-
-&lt;p&gt;There a couple of other sicky points that I don’t have time to completely address in this post. But these issues will need to be addressed before publiscation!&lt;/p&gt;
-
-&lt;p&gt;A non-exhaustive list:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What are occupancy rates of bats at these sites?&lt;/li&gt;
-  &lt;li&gt;Not all human visits are a potential risk for transmission.&lt;/li&gt;
-  &lt;li&gt;What factors impact the spread of the Pd fungal cells between caves?
-    &lt;ul&gt;
-      &lt;li&gt;Incorporating the (viable) spore load, decay of viability with time, etc., for Pd spores&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;some-preliminary-results&quot;&gt;Some Preliminary Results&lt;/h2&gt;
-
-&lt;h3 id=&quot;data-collection&quot;&gt;Data Collection&lt;/h3&gt;
-
-&lt;p&gt;We were able to scrape a large collection of Geocaching records from &lt;a href=&quot;geocaching.com&quot;&gt;geocaching.com&lt;/a&gt;. We used the &lt;a href=&quot;https://www.geocaching.com/developers/documentation/api&quot;&gt;Geocaching API&lt;/a&gt; to collect this data. To avoid having to scrape all of the sites across North America and Europe, we restricted our search to only the areas where WNS has been recorded in North America and Europe. We also limited our search to sites that had the word “cave” or “mine” in their description.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Region&lt;/th&gt;
-      &lt;th&gt;Number of Sites&lt;/th&gt;
-      &lt;th&gt;Number of Unique Users&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;North America&lt;/td&gt;
-      &lt;td&gt;1,627&lt;/td&gt;
-      &lt;td&gt;12,354&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Europe&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt;24,123&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;[[images/na-connectivity.png]]
-[[images/europe-connectivity.png]]&lt;/p&gt;
-
-&lt;p&gt;![[images/users_year.gif]]&lt;/p&gt;
-
-&lt;h3 id=&quot;what-proportion-of-users-visit-caves-in-europe&quot;&gt;What proportion of users visit caves in Europe?&lt;/h3&gt;
-
-&lt;p&gt;0.4% (~94 users)
-2 individual users logged at European cave
-…before entering a North American cave within 30 days&lt;/p&gt;
-
-&lt;p&gt;![[images/europe_users.png]]&lt;/p&gt;
-
-&lt;p&gt;Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of WNS, further precautions need to be made to prevent and manage the further spread of WNS.&lt;/p&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author></entry></feed>
+&lt;p&gt;Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of WNS, further precautions need to be made to prevent and manage the further spread of WNS.&lt;/p&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><category term="phd research" /><category term="epidemic" /><category term="disease" /><category term="web scraping" /><summary type="html">The Problem</summary></entry></feed>

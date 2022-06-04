@@ -1,7 +1,7 @@
 ---
 title: "How to automate processing of sanger sequencing data in R"
 author: "Adrian Forsythe"
-permalink: /posts/2022/05/sangeranalyseR-demo
+permalink: /posts/2022/05/sangeranalyseR-demo/
 date: "2022-05-21"
 output: html_document
 ---
