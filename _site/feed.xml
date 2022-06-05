@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://adrianforsythe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adrianforsythe.github.io/" rel="alternate" type="text/html" /><updated>2022-06-04T07:16:42-07:00</updated><id>https://adrianforsythe.github.io/feed.xml</id><title type="html">Adrian Forsythe</title><subtitle>Academic CV</subtitle><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><entry><title type="html">How to automate processing of sanger sequencing data in R</title><link href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/" rel="alternate" type="text/html" title="How to automate processing of sanger sequencing data in R" /><published>2022-05-21T00:00:00-07:00</published><updated>2022-05-21T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://adrianforsythe.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adrianforsythe.github.io/" rel="alternate" type="text/html" /><updated>2022-06-05T05:52:46-07:00</updated><id>https://adrianforsythe.github.io/feed.xml</id><title type="html">Adrian Forsythe</title><subtitle>Academic CV</subtitle><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><entry><title type="html">How to automate processing of sanger sequencing data in R</title><link href="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/" rel="alternate" type="text/html" title="How to automate processing of sanger sequencing data in R" /><published>2022-05-21T00:00:00-07:00</published><updated>2022-05-21T00:00:00-07:00</updated><id>https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2022/05/sangeranalyseR-demo/">&lt;ul&gt;
   &lt;li&gt;adapted from sangeranalyseR, see: https://github.com/roblanf/sangeranalyseR&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -157,34 +157,32 @@ writeXStringSet(x = DNAStringSet(conseqs), filepath = 'results/consensus.fa')
 &lt;img align=&quot;right&quot; style=&quot;width:300px;&quot; alt=&quot;Road Connectivity&quot; src=&quot;images/major_roads.png&quot; /&gt;
 &lt;img align=&quot;center&quot; style=&quot;width:300px;&quot; alt=&quot;Landscape Surface Plots&quot; src=&quot;images/landscape-surface-plots.png&quot; /&gt;&lt;/p&gt;</content><author><name>Adrian Forsythe</name></author><summary type="html"></summary></entry><entry><title type="html">Does Human Activity Contribute to the Spread of White-Nose Syndrome?</title><link href="https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/" rel="alternate" type="text/html" title="Does Human Activity Contribute to the Spread of White-Nose Syndrome?" /><published>2020-01-01T00:00:00-08:00</published><updated>2020-01-01T00:00:00-08:00</updated><id>https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome</id><content type="html" xml:base="https://adrianforsythe.github.io/posts/2020/01/DoesHumanActivityContributetotheSpreadofWhiteNoseSyndrome/">&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
 
-&lt;p&gt;&lt;img align=&quot;right&quot; style=&quot;width:300px;&quot; alt=&quot;Image from whitenosesyndrome.org&quot; src=&quot;images/wns.jpg&quot; /&gt;
-White-nose Syndrome (WNS) is an ongoing fungal epizootic caused by epidermal infections of the fungus, &lt;em&gt;Pseudogymnoascus destructans&lt;/em&gt; (Pd), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, WNS has spread via clonal reproduction through North-Eastern United States and Canada provinces.&lt;/p&gt;
+&lt;p&gt;&lt;img align=&quot;right&quot; style=&quot;width:300px;&quot; alt=&quot;Image from whitenosesyndrome.org&quot; src=&quot;../../../../images/wns.jpg&quot; /&gt;
+White-nose Syndrome is an ongoing fungal epizootic caused by epidermal infections of the fungus, &lt;em&gt;Pseudogymnoascus destructans&lt;/em&gt; (&lt;em&gt;Pd&lt;/em&gt;), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, White-nose Syndrome has spread via clonal reproduction through North-Eastern United States and Canada provinces.&lt;/p&gt;
 
-&lt;p&gt;&lt;img align=&quot;right&quot; style=&quot;width:300px;&quot; alt=&quot;WNS Transmission Model&quot; src=&quot;images/transmission-model.png&quot; /&gt;
-What remains relatively unknown is how much human activity has the potential to influence the spread of WNS. Our influence on the transmission of Pd has never been quantitatively measured at bat hibernacula.&lt;/p&gt;
+&lt;p&gt;&lt;img align=&quot;center&quot; style=&quot;width:500px;&quot; alt=&quot;White-nose Syndrome Transmission Model&quot; src=&quot;../../../../images/transmission-model.png&quot; /&gt;&lt;br /&gt;
+What remains relatively unknown is how much human activity has the potential to influence the spread of White-nose Syndrome. Our influence on the transmission of &lt;em&gt;Pd&lt;/em&gt; has never been quantitatively measured at bat hibernacula.&lt;/p&gt;
 
-&lt;p&gt;So how can we get our hands on the visitation rates for humans visiting caves in North America and Europe? It’s not like there is a single place where these numbers are recorded. Only caves that serve as tourist destinations might have these numbers, and this represents a very small proportion of the bats impacted by WNS in North America. Since most natural roosts likely exist on private land (not government owned/operated), it seems like this information would be impossible to obtain, right?&lt;/p&gt;
+&lt;p&gt;So how can we get our hands on the visitation rates for humans visiting caves in North America and Europe? It’s not like there is a single place where these numbers are recorded. Only caves that serve as tourist destinations might have these numbers, and this represents a very small proportion of the bats impacted by White-nose Syndrome in North America. Since most natural roosts likely exist on private land (not government owned/operated), it seems like this information would be impossible to obtain, right?&lt;/p&gt;
 
 &lt;h2 id=&quot;the-application-of-novel-data-streams-to-problems-in-disease-ecology&quot;&gt;The Application of Novel Data Streams to Problems in Disease Ecology&lt;/h2&gt;
 
-&lt;p&gt;&lt;img align=&quot;right&quot; style=&quot;width:300px;&quot; alt=&quot;Novel data streams in epidemiology&quot; src=&quot;images/noveldatastreams.png&quot; /&gt;
+&lt;p&gt;&lt;img align=&quot;center&quot; style=&quot;width:500px;&quot; alt=&quot;Novel data streams in epidemiology&quot; src=&quot;../../../../images/noveldatastreams.png&quot; /&gt;&lt;br /&gt;
 So called, “Novel Data Streams” are becoming more widely used in epidemiology. In particular, they have recently been applied to tracking the spread of influenza and other infectious diseases in human populations.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;What if we could use novel data streams to understand how human activity has the potential to influence the spread of WNS? What sources would have useful information for this purpose?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What if we could use novel data streams to understand how human activity has the potential to influence the spread of White-nose Syndrome? What sources would have useful information for this purpose?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;geocaching&quot;&gt;Geocaching&lt;/h3&gt;
 
-&lt;p&gt;&lt;img align=&quot;right&quot; style=&quot;width:300px;&quot; alt=&quot;geocaching.com&quot; src=&quot;images/geocaching.png&quot; /&gt;
-Consider the activity of “Geocaching”, which, simply put, is kind of a massively social scavenger hunt. There are around 4 million active geocaches worldwide. Many of these users are extremely active, sometimes logging hundreds or thousands of “finds”. Users of &lt;a href=&quot;geocaching.com&quot;&gt;geocaching.com&lt;/a&gt; can search for “caches” hidden by other users, and even hide their own caches for others to find. make posts with clues to Here we use online Geocaching records at sampling sites as a proxy for human activity in these areas.&lt;/p&gt;
+&lt;p&gt;Consider the activity of “Geocaching”, which, simply put, is kind of a massively social scavenger hunt. There are around 4 million active geocaches worldwide. Many of these users are extremely active, sometimes logging hundreds or thousands of “finds”. Users of &lt;a href=&quot;geocaching.com&quot;&gt;geocaching.com&lt;/a&gt; can search for “caches” hidden by other users, and even hide their own caches for others to find. make posts with clues to Here we use online Geocaching records at sampling sites as a proxy for human activity in these areas.
+&lt;img align=&quot;right&quot; style=&quot;width:200px;&quot; alt=&quot;geocaching.com&quot; src=&quot;../../../../images/geocaching.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is an extremely exciting data source to use for our purpose here, there are several pieces of information tied to each cache:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;All “finds” of a cache are logged
     &lt;ul&gt;
-      &lt;li&gt;location&lt;/li&gt;
-      &lt;li&gt;time&lt;/li&gt;
-      &lt;li&gt;user ID&lt;/li&gt;
+      &lt;li&gt;the coordinated, date, and unique user ID&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;We can link a user’s activity across different sites
@@ -219,9 +217,9 @@ Consider the activity of “Geocaching”, which, simply put, is kind of a massi
 &lt;ul&gt;
   &lt;li&gt;What are occupancy rates of bats at these sites?&lt;/li&gt;
   &lt;li&gt;Not all human visits are a potential risk for transmission.&lt;/li&gt;
-  &lt;li&gt;What factors impact the spread of the Pd fungal cells between caves?
+  &lt;li&gt;What factors impact the spread of the &lt;em&gt;Pd&lt;/em&gt; fungal cells between caves?
     &lt;ul&gt;
-      &lt;li&gt;Incorporating the (viable) spore load, decay of viability with time, etc., for Pd spores&lt;/li&gt;
+      &lt;li&gt;Incorporating the (viable) spore load, decay of viability with time, etc., for &lt;em&gt;Pd&lt;/em&gt; spores&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -230,7 +228,7 @@ Consider the activity of “Geocaching”, which, simply put, is kind of a massi
 
 &lt;h3 id=&quot;data-collection&quot;&gt;Data Collection&lt;/h3&gt;
 
-&lt;p&gt;We were able to scrape a large collection of Geocaching records from &lt;a href=&quot;geocaching.com&quot;&gt;geocaching.com&lt;/a&gt;. We used the &lt;a href=&quot;https://www.geocaching.com/developers/documentation/api&quot;&gt;Geocaching API&lt;/a&gt; to collect this data. To avoid having to scrape all of the sites across North America and Europe, we restricted our search to only the areas where WNS has been recorded in North America and Europe. We also limited our search to sites that had the word “cave” or “mine” in their description.&lt;/p&gt;
+&lt;p&gt;We were able to scrape a large collection of Geocaching records from &lt;a href=&quot;geocaching.com&quot;&gt;geocaching.com&lt;/a&gt;. We used the &lt;a href=&quot;https://www.geocaching.com/developers/documentation/api&quot;&gt;Geocaching API&lt;/a&gt; to collect this data. To avoid having to scrape all of the sites across North America and Europe, we restricted our search to only the areas where White-nose Syndrome has been recorded in North America and Europe. We also limited our search to sites that had the word “cave” or “mine” in their description.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -249,20 +247,26 @@ Consider the activity of “Geocaching”, which, simply put, is kind of a massi
     &lt;tr&gt;
       &lt;td&gt;Europe&lt;/td&gt;
       &lt;td&gt;92&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;12 559&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;img align=&quot;left&quot; style=&quot;width:300px;&quot; alt=&quot;Connectivity of sites in North America&quot; src=&quot;images/na-connectivity.png&quot; /&gt;
-&lt;img align=&quot;right&quot; style=&quot;width:300px;&quot; alt=&quot;Connectivity of sites in Europe&quot; src=&quot;images/europe-connectivity.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img align=&quot;left&quot; style=&quot;width:200px;&quot; alt=&quot;Connectivity of sites in North America&quot; src=&quot;../../../../images/na-connectivity.png&quot; /&gt;
+&lt;img align=&quot;right&quot; style=&quot;width:200px;&quot; alt=&quot;Connectivity of sites in Europe&quot; src=&quot;../../../../images/europe-connectivity.png&quot; /&gt;\&lt;/p&gt;
 
-&lt;p&gt;&lt;img align=&quot;center&quot; style=&quot;width:300px;&quot; alt=&quot;User activity between sites in Europe&quot; src=&quot;images/users_year.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The users that visit these sites move around alot more than expected! About 15% of users visit another cave geocache within a month. And most of these visits are to sites that are relatively close by/&lt;br /&gt;
+&lt;img align=&quot;center&quot; style=&quot;width:400px;&quot; alt=&quot;User activity between sites in Europe&quot; src=&quot;../../../../images/users_year.gif&quot; /&gt;&lt;br /&gt;
+But what are the implications of users that travel long distances between different caves?&lt;/p&gt;
 
 &lt;h3 id=&quot;what-proportion-of-users-visit-caves-in-europe&quot;&gt;What proportion of users visit caves in Europe?&lt;/h3&gt;
 
-&lt;p&gt;0.4% (~94 users)
-2 individual users logged at European cave…&lt;strong&gt;before entering a North American cave within 30 days&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;About 94 users (0.4%) in the total dataset have been visiting geocaching sites on different continents.
+This includes 2 individual users who logged at European cave…&lt;strong&gt;before entering a North American cave within 30 days&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img align=&quot;right&quot; style=&quot;width:300px;&quot; alt=&quot;European users at caves&quot; src=&quot;images/europe_users.png&quot; /&gt;
-Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of WNS, further precautions need to be made to prevent and manage the further spread of WNS.&lt;/p&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><category term="phd research" /><category term="epidemic" /><category term="disease" /><category term="web scraping" /><summary type="html">The Problem</summary></entry></feed>
+&lt;p&gt;Why is this length of time significant? Well, in one or my &lt;a href=&quot;_site/publication/2018-01-01-aem.html&quot;&gt;previous papers&lt;/a&gt;, we demonstrated that spores of &lt;em&gt;Pd&lt;/em&gt;, which is a psychrophilic pathogen, can survive for 30 days at 23C. This means that spores could potentially be spread between caves, if visits happen within a relatively small time frame.&lt;/p&gt;
+
+&lt;p&gt;&lt;img align=&quot;center&quot; style=&quot;width:400px;&quot; alt=&quot;Temperature tolerance of Pd spores&quot; src=&quot;../../../../images/sporetemperature.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of White-nose Syndrome, further precautions need to be made to prevent and manage the further spread of White-nose Syndrome.
+&lt;img align=&quot;center&quot; style=&quot;width:400px;&quot; alt=&quot;European users at caves&quot; src=&quot;../../../../images/europe_users.png&quot; /&gt;&lt;/p&gt;</content><author><name>Adrian Forsythe</name><email>adrian.e.forsythe@gmail.com</email></author><category term="phd research" /><category term="epidemic" /><category term="disease" /><category term="web scraping" /><summary type="html">The Problem</summary></entry></feed>

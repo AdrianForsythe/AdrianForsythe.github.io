@@ -128,7 +128,7 @@
   @include breakpoint($small) {
     @include gallery(5 of 10);
     .archive__item-teaser {
-      max-height: 300px;
+      max-height: 200px;
     }
   }
 
@@ -167,7 +167,7 @@
     @include gallery(4 of 12);
 
     .feature__item-teaser {
-      max-height: 300px;
+      max-height: 200px;
       overflow: hidden;
     }
   }
