@@ -9,7 +9,7 @@ redirect_from:
 ## Employment
 
 <img align="right" style="width:200px;" alt="Botanical gardens with a view of the castle" src="images/uppsala.jpg">
- am a PostDoc in the Guschanski Lab (Uppsala University), where my research focuses on both the ancient and modern microbiomes of wild mammals and identifying antimicrobial resistance factors within these communities. The goal of my research is to ultimately contribute to conservation efforts to curb disruptions to microbial ecosystems.
+I am a PostDoc in the Guschanski Lab (Uppsala University), where my research focuses on both the ancient and modern microbiomes of wild mammals and identifying antimicrobial resistance factors within these communities. The goal of my research is to ultimately contribute to conservation efforts to curb disruptions to microbial ecosystems.
 
 ## General Interests
 
