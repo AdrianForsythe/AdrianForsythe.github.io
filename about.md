@@ -10,19 +10,19 @@ redirect_from:
 
 👋 Hi there! My name is Adrian, I am a (micro)biologist by training, and I use genomics to ask solve problems caused by pathogens that live on wild animals. I am particularly interested in fungal pathogens, host-microbiome interactions, and how humans disrupt wild microbial communities.
 
-<img align="center" style="width:600px;" alt="Getting my hands dirty" src="images/labwork.jpeg">\
+<img align="center" style="width:800px;" alt="Getting my hands dirty" src="images/labwork.jpeg">
 
 ## "What exactly do you do here?"
 
-<img align="center" style="width:600px;" alt="" src="images/skills.png">\
+<img align="center" style="width:800px;" alt="" src="images/skills.png">
 
 ## Employment
 
 I am about to start a new PostDoc position in the Vogan Lab (Uppsala University), where my research will focuse on the identification and annotation of repetitive elements in the genomes of a fungal ascomycete pathogen. Stay tuned for more info...
-<img align="right" style="width:200px;" alt="Botanical gardens with a view of the castle" src="images/uppsala.jpg">\
+<img align="right" style="width:200px;" alt="Botanical gardens with a view of the castle" src="images/uppsala.jpg">
 
-I just finished a PostDoc in the Guschanski Lab (Uppsala University), where my research focused on both the ancient and modern microbiomes of wild mammals and identifying antimicrobial resistance factors within these communities. The goal of my research is to ultimately contribute to conservation efforts to curb disruptions to microbial ecosystems.\
-<img align="center" style="width:600px;" alt="Markella, Axel, Me, and Katerina Guschanski" src="images/gusch-labgroup.jpg">\
+I just finished a PostDoc in the Guschanski Lab (Uppsala University), where my research focused on both the ancient and modern microbiomes of wild mammals and identifying antimicrobial resistance factors within these communities. The goal of my research is to ultimately contribute to conservation efforts to curb disruptions to microbial ecosystems.
+<img align="center" style="width:800px;" alt="Markella, Axel, Me, and Katerina Guschanski" src="images/gusch-labgroup.jpg">
 
 ## Education
 
@@ -31,7 +31,7 @@ I just finished a PostDoc in the Guschanski Lab (Uppsala University), where my r
 - MSc in Microbiology (2014-2016)
   - McMaster University, Hamilton, Canada
 - H. BSc in Biology, Honours (2010-2014)
-  - Tren University, Peterborough, Canada -->
+  - Trent University, Peterborough, Canada
 
 ## Research Projects
 
