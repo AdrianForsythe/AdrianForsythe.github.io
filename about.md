@@ -6,59 +6,23 @@ author_profile: true
 redirect_from:
 ---
 
+## `whoami`
+
+👋 Hi there! My name is Adrian, I am a (micro)biologist by training, and I use genomics to ask solve problems caused by pathogens that live on wild animals. I am particularly interested in fungal pathogens, host-microbiome interactions, and how humans disrupt wild microbial communities.
+
+<img align="center" style="width:600px;" alt="Getting my hands dirty" src="images/labwork.jpeg">\
+
+## "What exactly do you do here?"
+
+<img align="center" style="width:600px;" alt="" src="images/skills.png">\
+
 ## Employment
 
-<img align="right" style="width:200px;" alt="Botanical gardens with a view of the castle" src="images/uppsala.jpg">
-I am a PostDoc in the Guschanski Lab (Uppsala University), where my research focuses on both the ancient and modern microbiomes of wild mammals and identifying antimicrobial resistance factors within these communities. The goal of my research is to ultimately contribute to conservation efforts to curb disruptions to microbial ecosystems.
+I am about to start a new PostDoc position in the Vogan Lab (Uppsala University), where my research will focuse on the identification and annotation of repetitive elements in the genomes of a fungal ascomycete pathogen. Stay tuned for more info...
+<img align="right" style="width:200px;" alt="Botanical gardens with a view of the castle" src="images/uppsala.jpg">\
 
-## General Interests
-
-In general, most of my work has been focused on the intersection between 'wet' and 'dry' lab work.
-I apply my knowledge of ecology and microbiology to address problems using genomic tools. I am particularly interested in pathogens, host-microbe interactions, and anthropogenic influences on microbial communities.
-
-<!-- ## Technical Skills
-
-- Shell/BASH
-- R
-
-  - tidyverse
-  - plotly
-  - Rshiny
-
-- python
-
-  - pandas
-  - scikitlearn
-  - snakemake
-
-- Desktop Linux
-- CLI Unix
-- Docker
-- Singularity
-- conda
-- Nextflow
-- Web Scraping
-  - RSelenium
-  - beautifulsoup4
-- Dimension Reduction Techniques
-  - PCA
-  - UMAP
-- Network Analyses
-- ML
-
-  - Random Forest
-  - Linear discriminant analysis
-
-- Wet and Dry Lab Skills
-- Hypothesis testing
-- Data Analysis and Visualization
-- Statistical Analysis
-
-- Microbial genetics
-- Genome Assembly and Annotation
-- Metagenomics/Metabarcoding
-- Landscape Genetics
-- Pangenomics
+I just finished a PostDoc in the Guschanski Lab (Uppsala University), where my research focused on both the ancient and modern microbiomes of wild mammals and identifying antimicrobial resistance factors within these communities. The goal of my research is to ultimately contribute to conservation efforts to curb disruptions to microbial ecosystems.\
+<img align="center" style="width:600px;" alt="Markella, Axel, Me, and Katerina Guschanski" src="images/gusch-labgroup.jpg">\
 
 ## Education
 
