@@ -14,14 +14,14 @@ tags:
 <img align="right" style="width:300px;" alt="Image from whitenosesyndrome.org" src="../../../../images/wns.jpg">
 White-nose Syndrome is an ongoing fungal epizootic caused by epidermal infections of the fungus, _Pseudogymnoascus destructans_ (*Pd*), affecting multiple bat species in North America. Emerging sometime around 2008 in New York State, White-nose Syndrome has spread via clonal reproduction through North-Eastern United States and Canada provinces.
 
-<img align="center" style="width:500px;" alt="White-nose Syndrome Transmission Model" src="../../../../images/transmission-model.png">\
+<img align="center" style="width:500px;" alt="White-nose Syndrome Transmission Model" src="../../../../images/transmission-model.png">\\
 What remains relatively unknown is how much human activity has the potential to influence the spread of White-nose Syndrome. Our influence on the transmission of _Pd_ has never been quantitatively measured at bat hibernacula.
 
 So how can we get our hands on the visitation rates for humans visiting caves in North America and Europe? It's not like there is a single place where these numbers are recorded. Only caves that serve as tourist destinations might have these numbers, and this represents a very small proportion of the bats impacted by White-nose Syndrome in North America. Since most natural roosts likely exist on private land (not government owned/operated), it seems like this information would be impossible to obtain, right?
 
 ## The Application of Novel Data Streams to Problems in Disease Ecology
 
-<img align="center" style="width:500px;" alt="Novel data streams in epidemiology" src="../../../../images/noveldatastreams.png">\
+<img align="center" style="width:500px;" alt="Novel data streams in epidemiology" src="../../../../images/noveldatastreams.png">\\
 So called, "Novel Data Streams" are becoming more widely used in epidemiology. In particular, they have recently been applied to tracking the spread of influenza and other infectious diseases in human populations.
 
 **What if we could use novel data streams to understand how human activity has the potential to influence the spread of White-nose Syndrome? What sources would have useful information for this purpose?**
@@ -77,10 +77,11 @@ We were able to scrape a large collection of Geocaching records from [geocaching
 | Europe        | 92              | 12 559                 |
 
 <img align="left" style="width:200px;" alt="Connectivity of sites in North America" src="../../../../images/na-connectivity.png">
-<img align="right" style="width:200px;" alt="Connectivity of sites in Europe" src="../../../../images/europe-connectivity.png">\
+<img align="right" style="width:200px;" alt="Connectivity of sites in Europe" src="../../../../images/europe-connectivity.png">\\
 
-The users that visit these sites move around alot more than expected! About 15% of users visit another cave geocache within a month. And most of these visits are to sites that are relatively close by/\
-<img align="center" style="width:400px;" alt="User activity between sites in Europe" src="../../../../images/users_year.gif">\
+The users that visit these sites move around alot more than expected! About 15% of users visit another cave geocache within a month. And most of these visits are to sites that are relatively close by!
+
+<img align="center" style="width:400px;" alt="User activity between sites in North America" src="../../../../images/users_year.gif">\\
 But what are the implications of users that travel long distances between different caves?
 
 ### What proportion of users visit caves in Europe?
@@ -93,4 +94,4 @@ Why is this length of time significant? Well, in one or my [previous papers](_si
 <img align="center" style="width:400px;" alt="Temperature tolerance of Pd spores" src="../../../../images/sporetemperature.png">
 
 Our results suggest that sites with a greater number of unique visitors are correlated with higher genotype diversity at these caves. Considering the impact that humans could have on the spread of White-nose Syndrome, further precautions need to be made to prevent and manage the further spread of White-nose Syndrome.
-<img align="center" style="width:400px;" alt="European users at caves" src="../../../../images/europe_users.png">
+<img align="center" style="width:400px;" alt="Movement of users across continents" src="../../../../images/eu_travellers.png">
