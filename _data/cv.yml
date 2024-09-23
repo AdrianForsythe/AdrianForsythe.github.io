@@ -18,6 +18,11 @@ skills:
     - name: ggplot2
     - name: plotly
     - name: matplotlib
+  soft:
+    - name: planning and execution of collaborative research projects
+    - name: proficient in multiple scripting and workflow languages
+    - name: reproducible research
+    - name: highly self-motivated
 
 languages:
   - name: python
