@@ -1,0 +1,30 @@
+skills:
+  bioinformatics:
+    - name: fungal genomics
+    - name: pipeline development (snakemake, Nextflow)
+    - name: comparative genomics
+  databases:
+    - name: sqlite
+    - name: mariadb
+    - name: SQLalchemy
+  analysis:
+    - name: linear models
+    - name: mixed models
+    - name: clustering
+    - name: spatial analyses
+    - name: ML (random forest, CNNs)
+  visualization:
+    - name: dashboards (flask, django)
+    - name: ggplot2
+    - name: plotly
+    - name: matplotlib
+
+languages:
+  - name: python
+    percentage: 40
+  - name: R
+    percentage: 20
+  - name: shell
+    percentage: 20
+  - name: Nextflow
+    percentage: 20

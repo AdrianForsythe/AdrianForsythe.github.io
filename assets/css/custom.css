@@ -1,0 +1,47 @@
+/* General tag cloud styling */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tag-group {
+  margin-bottom: 20px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #007acc;
+  color: white;
+  transform: scale(1.1);
+}
+
+.bioinformatics .tag {
+  font-size: 16px;
+  background-color: #e0f7fa;
+}
+
+.databases .tag {
+  font-size: 15px;
+  background-color: #c8e6c9;
+}
+
+.analysis .tag {
+  font-size: 13px;
+  background-color: #d1c4e9;
+}
+
+.visualization .tag {
+  font-size: 14px;
+  background-color: #f8bbd0;
+}
